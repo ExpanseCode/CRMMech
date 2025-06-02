@@ -1,0 +1,25 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  backdrop-filter: blur(10px);
+  background: rgba(106, 104, 104, 0.46);
+  height: 72px;
+}
+
+.logo {
+  width: 161px;
+  height: 40px;
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.link {
+  text-decoration: none;
+  color: grey;
+  font-weight: 600;
+}
