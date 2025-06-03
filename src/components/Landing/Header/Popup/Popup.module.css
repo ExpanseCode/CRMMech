@@ -1,11 +1,11 @@
 .wrapper {
   width: 319px;
-  height: 460px;
+  height: auto;
   background-color: white;
   padding: 8px;
 
   position: absolute;
-  top: 100%;
+  top: 80%;
   right: 44%;
   /*left: 50%; */
 
@@ -47,16 +47,17 @@
 .icon {
   width: 16px;
   height: 16px;
-  fill: #2563eb;
+  color: #2563eb;
 }
 
 .pageName {
-  color: #111827;
-  font-weight: 600;
-  font-size: 18px;
+  color: var(--text-headers);
+  font-weight: 500;
+  /* font-size: 18px; */
 }
 
 .pageText {
-  font-size: 16px;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
   color: #6b7280;
 }

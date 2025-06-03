@@ -23,7 +23,7 @@ export default function Header() {
           </a>
         </li>
         <li className={css.item}>
-          <a className={css.link} onClick={() => setIsActive(!isActive)}>
+          <a className={`${css.link} ${isActive && css.active}`} onClick={() => setIsActive(!isActive)}>
             <div className={css.moduleWrapper}>
               Модулі
               <IoIosArrowDown

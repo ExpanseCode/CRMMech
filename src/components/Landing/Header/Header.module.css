@@ -1,7 +1,6 @@
 .wrapper {
-  width: 1231px;
-  padding-left: 15px;
-  padding-right: 15px;
+  width: 1280px;
+  padding: 16px 32px;
   border-radius: 8px;
   display: flex;
   align-items: center;
@@ -29,15 +28,20 @@
 
 .link {
   text-decoration: none;
-  color: rgba(75, 85, 99, 0.46);
+  color: var(--text-gray);
   font-weight: 600;
-  font-size: 20px;
+  font-size: 1.25rem;
   cursor: pointer;
 }
+
 .moduleWrapper {
   display: flex;
   align-items: center;
   gap: 5px;
+}
+
+.active {
+  color: var(--primary)
 }
 
 .icon {
@@ -72,6 +76,7 @@
   border: 1px solid #2463eb;
   color: #2463eb;
 }
+
 .enterLink:hover {
   background-color: #2463eb;
   color: white;
