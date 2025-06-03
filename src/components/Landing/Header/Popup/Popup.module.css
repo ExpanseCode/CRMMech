@@ -1,0 +1,63 @@
+.wrapper {
+  width: 319px;
+  height: auto;
+  background-color: white;
+  padding: 8px;
+
+  position: absolute;
+  top: 80%;
+  right: 44%;
+  /*left: 50%; */
+
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  border: 1px solid #e1e7ef;
+}
+
+.firstPoint {
+  padding: 12px;
+  padding-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-bottom: 1px solid #e1e7ef;
+  cursor: pointer;
+}
+
+.listItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px;
+  height: fit-content;
+  cursor: pointer;
+}
+
+.iconBox {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  background-color: #dbeafe;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #2563eb;
+}
+
+.icon {
+  width: 16px;
+  height: 16px;
+  color: #2563eb;
+}
+
+.pageName {
+  color: var(--text-headers);
+  font-weight: 500;
+  /* font-size: 18px; */
+}
+
+.pageText {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: #6b7280;
+}

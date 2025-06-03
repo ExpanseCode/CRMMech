@@ -1,0 +1,92 @@
+.wrapper {
+  width: 1280px;
+  padding: 16px 32px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  backdrop-filter: blur(10px);
+  /* background: rgba(106, 104, 104, 0.46); */
+  height: 72px;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 999;
+}
+
+.logo {
+  width: 161px;
+  height: 40px;
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.link {
+  text-decoration: none;
+  color: var(--text-gray);
+  font-weight: 600;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+.moduleWrapper {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.active {
+  color: var(--primary)
+}
+
+.icon {
+  transition: transform 0.5s ease-in-out;
+}
+
+.rotated {
+  transform: rotate(180deg);
+}
+
+.btnBox {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.enterLink,
+.freeTestLink {
+  width: fit-content;
+  height: 40px;
+  border-radius: 8px;
+  padding: 8px 16px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.enterLink {
+  background-color: white;
+  border: 1px solid #2463eb;
+  color: #2463eb;
+}
+
+.enterLink:hover {
+  background-color: #2463eb;
+  color: white;
+}
+
+.freeTestLink {
+  background-color: #2463eb;
+  color: white;
+}
+
+.freeTestLink:hover {
+  background-color: #2463ebe6;
+}
