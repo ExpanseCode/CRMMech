@@ -18,6 +18,9 @@
   --destructive: #ef4444;
   --destructive-foreground: #f6f9fb;
   --ring: #3e63dd;
+  --text-headers: #111827;
+  --text-gray: #4b5563;
+  --card-border: #f3f4f6;
 }
 
 @font-face {
@@ -71,7 +74,6 @@ html {
 section {
   padding: 80px 0;
 }
-
 
 h1,
 h2,
