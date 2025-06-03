@@ -1,5 +1,5 @@
 import { RxHamburgerMenu } from 'react-icons/rx';
-import { HiOutlineDesktopComputer } from 'react-icons/hi';
+import { MdOutlineDesktopWindows } from 'react-icons/md';
 import { CiCalendar } from 'react-icons/ci';
 import { MdOutlineSettings } from 'react-icons/md';
 import { BsBoxSeam } from 'react-icons/bs';
@@ -9,7 +9,7 @@ import css from './Popup.module.css';
 export default function Popup(params) {
   const pages = [
     {
-      icon: <HiOutlineDesktopComputer className={css.icon} />,
+      icon: <MdOutlineDesktopWindows className={css.icon} />,
       name: 'Моніторинг',
       text: 'Центр управління реальним часом',
     },

@@ -2,6 +2,7 @@ import { useState } from 'react';
 import logo from '../../../assets/logo.png';
 import css from './Header.module.css';
 import Popup from './Popup/Popup';
+import { IoIosArrowDown } from 'react-icons/io';
 
 export default function Header() {
   const [isActive, setIsActive] = useState(false);
@@ -22,8 +23,13 @@ export default function Header() {
           </a>
         </li>
         <li className={css.item}>
-          <a className={css.link} onClick={() => setIsActive(true)}>
-            Модулі
+          <a className={css.link} onClick={() => setIsActive(!isActive)}>
+            <div className={css.moduleWrapper}>
+              Модулі
+              <IoIosArrowDown
+                className={`${css.icon} ${isActive && css.rotated}`}
+              />
+            </div>
           </a>
           {isActive && <Popup />}
         </li>

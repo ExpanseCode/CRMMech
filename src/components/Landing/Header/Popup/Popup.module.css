@@ -1,10 +1,62 @@
 .wrapper {
-  width: 318px;
+  width: 319px;
   height: 460px;
   background-color: white;
   padding: 8px;
+
+  position: absolute;
+  top: 100%;
+  right: 44%;
+  /*left: 50%; */
+
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  border: 1px solid #e1e7ef;
 }
 
 .firstPoint {
   padding: 12px;
+  padding-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-bottom: 1px solid #e1e7ef;
+  cursor: pointer;
+}
+
+.listItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px;
+  height: fit-content;
+  cursor: pointer;
+}
+
+.iconBox {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  background-color: #dbeafe;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #2563eb;
+}
+
+.icon {
+  width: 16px;
+  height: 16px;
+  fill: #2563eb;
+}
+
+.pageName {
+  color: #111827;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.pageText {
+  font-size: 16px;
+  color: #6b7280;
 }
