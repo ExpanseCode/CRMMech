@@ -1,0 +1,10 @@
+.wrapper {
+  width: 318px;
+  height: 460px;
+  background-color: white;
+  padding: 8px;
+}
+
+.firstPoint {
+  padding: 12px;
+}

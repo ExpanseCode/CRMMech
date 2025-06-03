@@ -1,7 +1,11 @@
+import { useState } from 'react';
 import logo from '../../../assets/logo.png';
 import css from './Header.module.css';
+import Popup from './Popup/Popup';
 
 export default function Header() {
+  const [isActive, setIsActive] = useState(false);
+
   return (
     <nav className={css.wrapper}>
       <img src={logo} alt="logo" className={css.logo} />
@@ -18,9 +22,10 @@ export default function Header() {
           </a>
         </li>
         <li className={css.item}>
-          <a href="modules" className={css.link}>
+          <a className={css.link} onClick={() => setIsActive(true)}>
             Модулі
           </a>
+          {isActive && <Popup />}
         </li>
         <li className={css.item}>
           <a href="prices" className={css.link}>
@@ -38,11 +43,17 @@ export default function Header() {
           </a>
         </li>
       </ul>
-      <div>
-        <a href="https://app.crmmech.com/" target="blank">
+      <div className={css.btnBox}>
+        <a
+          href="https://app.crmmech.com/"
+          target="blank"
+          className={css.enterLink}
+        >
           Вхід в систему
         </a>
-        <a href="free-test">Безкоштовний тест</a>
+        <a href="free-test" className={css.freeTestLink}>
+          Безкоштовний тест
+        </a>
       </div>
     </nav>
   );

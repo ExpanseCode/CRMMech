@@ -20,6 +20,36 @@
 
 .link {
   text-decoration: none;
-  color: grey;
+  color: rgba(75, 85, 99, 0.46);
   font-weight: 600;
+  font-size: 20px;
+}
+
+.btnBox {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.enterLink,
+.freeTestLink {
+  width: fit-content;
+  height: 40px;
+  border-radius: 8px;
+  padding: 8px 16px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.enterLink {
+  background-color: white;
+  border: 1px solid blue;
+  color: blue;
+}
+
+.freeTestLink {
+  background-color: blue;
+  color: white;
 }
