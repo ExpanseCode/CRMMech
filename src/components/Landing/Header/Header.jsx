@@ -1,11 +1,27 @@
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import logo from '../../../assets/logo.png';
 import css from './Header.module.css';
 import Popup from './Popup/Popup';
 import { IoIosArrowDown } from 'react-icons/io';
+import { motion, AnimatePresence } from 'framer-motion';
 
 export default function Header() {
   const [isActive, setIsActive] = useState(false);
+  const wrapperPopupRef = useRef(null);
+
+  useEffect(() => {
+    const handleClickOutside = event => {
+      if (
+        wrapperPopupRef.current &&
+        !wrapperPopupRef.current.contains(event.target)
+      ) {
+        setIsActive(false);
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, []);
 
   return (
     <nav className={css.wrapper}>
@@ -23,15 +39,29 @@ export default function Header() {
           </a>
         </li>
         <li className={css.item}>
-          <a className={`${css.link} ${isActive && css.active}`} onClick={() => setIsActive(!isActive)}>
-            <div className={css.moduleWrapper}>
+          <div
+            className={`${css.link} ${isActive && css.active}`}
+            onClick={() => setIsActive(!isActive)}
+          >
+            <div className={css.moduleWrapper} ref={wrapperPopupRef}>
               Модулі
               <IoIosArrowDown
                 className={`${css.icon} ${isActive && css.rotated}`}
               />
             </div>
-          </a>
-          {isActive && <Popup />}
+          </div>
+          <AnimatePresence>
+            {isActive && (
+              <motion.div
+                initial={{ opacity: 0, y: 0 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: 0 }}
+                transition={{ duration: 0.2 }}
+              >
+                <Popup />
+              </motion.div>
+            )}
+          </AnimatePresence>
         </li>
         <li className={css.item}>
           <a href="prices" className={css.link}>

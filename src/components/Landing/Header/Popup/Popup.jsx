@@ -8,7 +8,7 @@ import {
   HelpCircle,
 } from 'lucide-react';
 
-export default function Popup(params) {
+export default function Popup({}) {
   const pages = [
     {
       icon: <Monitor className={css.icon} />,
@@ -37,7 +37,7 @@ export default function Popup(params) {
     },
   ];
   return (
-    <div className={css.wrapper}>
+    <div className={css.wrapperPopup}>
       <div className={css.firstPoint}>
         <div className={css.iconBox}>
           <Menu className={css.icon} />
