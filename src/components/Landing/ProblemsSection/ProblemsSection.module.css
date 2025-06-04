@@ -1,0 +1,172 @@
+.container {
+  padding: 0 32px;
+}
+
+.title {
+  font-size: 3rem;
+  line-height: 1;
+  color: var(--text-headers);
+  text-align: center;
+}
+
+.sectionHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 64px;
+}
+
+.sectionSubtitle {
+  width: 768px;
+  color: var(--text-gray);
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  text-align: center;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0px, 1fr));
+  gap: 2rem;
+  margin-bottom: 48px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-width: 2px;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px rgb(0 0 0 / 0.05);
+  transition: all 0.3s ease;
+  cursor: default;
+}
+
+.card:hover {
+  box-shadow: 0 10px 20px rgb(0 0 0 / 0.1);
+  transform: translateY(-5px);
+}
+
+.problemIconWrapper {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.problemIcon {
+  width: 32px;
+  height: 32px;
+}
+
+.problemTitle {
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  color: #111827;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.problemDescription {
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 1.625;
+  padding: 0.75rem;
+  border: 1px solid #111827;
+  border-radius: 0.5rem;
+  margin-top: auto;
+}
+
+.problemText {
+  line-height: 1.625;
+  margin-bottom: 1rem;
+  color: #4b5563;
+}
+
+.problemDescriptionText {
+  font-weight: 600;
+  font-size: 0.875rem;
+}
+
+.problemBottomContainer {
+  text-align: center;
+  padding: 2rem;
+  border-radius: 2rem;
+  background: #ea580c;
+  color: white;
+}
+
+.problemTitleBottom {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.problemBottomText {
+      font-size: 1.25rem;
+    line-height: 1.75rem;
+}
+
+.problemBottomTry {
+  font-weight: 600;
+  font-size: 1.125rem;
+}
+
+.cardRed {
+  border: 2px solid rgb(254 202 202);
+}
+.cardOrange {
+  border: 2px solid rgb(254 215 170);
+}
+.cardPurple {
+  border: 2px solid rgb(233 213 255);
+}
+.cardBlue {
+  border: 2px solid rgb(191 219 254);
+}
+.cardIndigo {
+  border: 2px solid rgb(199 210 254);
+}
+.cardRedDark {
+  border: 2px solid rgb(252 165 165);
+}
+
+.problemRed {
+  background-color: #fef2f2;
+  stroke: #dc2626;
+  color: #dc2626;
+}
+
+.problemOrange {
+  background-color: #fff7ed;
+  stroke: #ea580e;
+  color: #ea580e;
+}
+
+.problemPurple {
+  background-color: #faf5ff;
+  stroke: #9333ea;
+  color: #9333ea;
+}
+.problemBlue {
+  background-color: #eff6ff;
+  stroke: #2563eb;
+  color: #2563eb;
+}
+.problemIndigo {
+  background-color: #eef2ff;
+  stroke: #4f46e5;
+  color: #4f46e5;
+}
+
+.problemIndigo {
+  background-color: #fff7ed;
+  stroke: #b91c1c;
+  color: #b91c1c;
+}
