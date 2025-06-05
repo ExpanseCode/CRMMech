@@ -131,14 +131,13 @@ export default function Header() {
           >
             Вхід в систему
           </a>
-          <div
-            onClick={() =>
-              window.open('https://forms.gle/oShc79zDeNqAyQ5p8', '_blank')
-            }
+          <a
+            href="https://forms.gle/oShc79zDeNqAyQ5p8"
+            target="_blank"
             className={css.freeTestLink}
           >
             Замовити
-          </div>
+          </a>
         </div>
       </nav>
     </motion.nav>

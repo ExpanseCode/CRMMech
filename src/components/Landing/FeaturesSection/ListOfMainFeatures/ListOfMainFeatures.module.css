@@ -119,10 +119,8 @@
 .imgTopCaption {
   font-size: 0.75rem;
   line-height: 1rem;
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
+  padding: 0.25rem 0.5rem;
+  font-weight: 500;
   border-radius: 0.25rem;
   position: absolute;
   top: 0.75rem;
@@ -131,6 +129,7 @@
   z-index: 9;
   color: white;
 }
+
 .imgTopCaptionPurple {
   background-color: #a855f7;
 }
@@ -141,10 +140,7 @@
   line-height: 1rem;
   font-weight: 700;
 
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
+  padding: 0.25rem 0.5rem;
 
   background-color: #22c55e;
 
@@ -159,12 +155,9 @@
   color: var(--text-blue);
   font-size: 0.875rem;
   line-height: 1.25rem;
+  font-weight: 500;
 
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
-
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
+  padding: 0.25rem 0.75rem;
 
   background-color: var(--light-blue-background);
   border-radius: 9999px;
@@ -181,8 +174,7 @@
 
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
-  right: 50%;
+  left: 50%;
   transform: translateX(-50%);
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
