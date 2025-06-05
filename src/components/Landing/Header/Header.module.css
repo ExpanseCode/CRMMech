@@ -34,6 +34,10 @@
   cursor: pointer;
 }
 
+.link:hover {
+  color: var(--primary);
+}
+
 .moduleWrapper {
   display: flex;
   align-items: center;
@@ -41,7 +45,7 @@
 }
 
 .active {
-  color: var(--primary)
+  color: var(--primary);
 }
 
 .icon {
@@ -75,6 +79,7 @@
   background-color: white;
   border: 1px solid #2463eb;
   color: #2463eb;
+  transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
 }
 
 .enterLink:hover {
@@ -85,8 +90,9 @@
 .freeTestLink {
   background-color: #2463eb;
   color: white;
+  transition: background-color 0.5s ease-in-out;
 }
 
 .freeTestLink:hover {
-  background-color: #2463ebe6;
+  background-color: #002b87;
 }
