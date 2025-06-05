@@ -29,7 +29,7 @@
   --light-green-background: #f0fdf4  ; /*240 253 244*/
   --dark-green-text: #166534; /*22 101 52*/
   --orange-background: #ffedd5  ; /*255 237 213*/
-  --dark-orange-text: #9a3412  ; /*154 52 18*/
+  --dark-orange-text: #9a3412  ; /*154 52 18*/ 
   --purple-text: #6b21a8; /*107 33 168*/
   --light-purple-background: #f3e8ff; /*243 232 255*/
   --border-red: #fecaca; /* rgb(254 202 202) */
@@ -37,8 +37,11 @@
   --border-purple: #e9d5ff  ; /* rgb(233 213 255)*/
   --border-blue: #bfdbfe; /* rgb(191 219 254) */
   --border-indigo: #c7d2fe; /* rgb(199 210 254) */
-  --border-dark-red: #fca5a5; /* rgb(252 165 165) */
+  --border-dark-red: #fca5a5; /* rgb(252 165 165) */ 
   --border-dark-gray: #1f2937; /* rgb(31 41 55) */
+  --red-background: #fef2f2; /* rgb(254 242 242) */
+  --red-text: #b91c1c; /* rgb(185 28 28) */
+  --yellow: #facc15; /* rgb(250 204 21) */
   
   
 }
@@ -92,7 +95,7 @@ html {
 }
 
 section {
-  padding: 80px 0;
+  padding: 60px 0;
 }
 
 h1,
