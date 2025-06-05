@@ -1,3 +1,3 @@
 export default function PricingSection() {
-    return <section>PricingSection</section>;
-};
+  return <section id="pricing">PricingSection</section>;
+}
