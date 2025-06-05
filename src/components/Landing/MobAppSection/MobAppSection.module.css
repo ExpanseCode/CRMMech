@@ -148,28 +148,85 @@
     background-color: var(--light-purple-background);
 }
 
-.featureImageBlock {}
+.featureImageBlock {
+    display: flex;
+    flex-shrink: 0;
+}
 
-.imageWrapper {}
+.imageContainer {
+    position: relative;
+    width: 256px;
+    height: 550px;
+    overflow: hidden;
+    border-radius: 16px;
+    border: 4px solid var(--border-dark-gray);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
 
-.imageContainer {}
+.featureImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
-.featureImage {}
+.mobileAppCTA {
+    text-align: center;
+    padding: 2rem;
+    border-radius: 1rem;
+    background: linear-gradient(to right, #dc2626, #ea580c);
+    color: white;
+}
 
-.mobileAppCTA {}
+.CTATitle {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
 
-.CTATitle {}
+.CTASubtitle {
+    max-width: 672px;
+    margin: 0 auto 1.5rem;
+    color: var(--orange-background)
+}
 
-.CTASubtitle {}
+.accessInstructions {
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin-bottom: 1.5rem;
+}
 
-.accessInstructions {}
+.instructionsTitle {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+}
 
-.instructionsTitle {}
+.instructionsList {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    max-width: 672px;
+    text-align: left;
+    margin: 0 auto;
+}
 
-.instructionsList {}
+.appUnavailable {
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    background-color: rgba(255, 255, 255, 0.1);
+}
 
-.appUnavailable {}
+.appUnavailableText {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 600;
+}
 
-.appUnavailableText {}
-
-.appUnavailableNote {}
+.appUnavailableNote {
+    margin-top: 0.5rem;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    color: var(--orange-background);
+}
