@@ -131,9 +131,14 @@ export default function Header() {
           >
             Вхід в систему
           </a>
-          <a href="free-test" className={css.freeTestLink}>
-            Безкоштовний тест
-          </a>
+          <div
+            onClick={() =>
+              window.open('https://forms.gle/oShc79zDeNqAyQ5p8', '_blank')
+            }
+            className={css.freeTestLink}
+          >
+            Замовити
+          </div>
         </div>
       </nav>
     </motion.nav>
