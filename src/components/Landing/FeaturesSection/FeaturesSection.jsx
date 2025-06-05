@@ -1,3 +1,3 @@
 export default function FeaturesSection() {
-  return <section>FeaturesSection</section>;
+  return <section id="features">FeaturesSection</section>;
 }
