@@ -98,7 +98,8 @@
   text-align: center;
   padding: 2rem;
   border-radius: 2rem;
-  background: #ea580c;
+  background: linear-gradient(to right, #dc2626, #ea580c);
+;
   color: white;
 }
 
@@ -165,7 +166,7 @@
   color: #4f46e5;
 }
 
-.problemIndigo {
+.problemDarkRed {
   background-color: #fff7ed;
   stroke: #b91c1c;
   color: #b91c1c;

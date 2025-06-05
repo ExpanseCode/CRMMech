@@ -75,7 +75,7 @@ export default function ProblemsSection() {
       impact: 'До 40% втрати потенційного прибутку',
       styleClass: 'cardRedDark',
       color: 'text-red-700',
-      iconBgClass: 'problemIndigo',
+      iconBgClass: 'problemDarkRed',
       borderColor: 'borderRedDark',
     },
   ];
