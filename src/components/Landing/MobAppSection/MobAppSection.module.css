@@ -1,0 +1,175 @@
+.sectionWrapper {}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 0 32px;
+    gap: 64px;
+}
+
+.sectionHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.headerBtn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    background-color: var(--light-blue-background);
+    border-radius: 16px;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    color: var(--text-blue);
+
+}
+
+.smartPhoneIcon {
+    width: 16px;
+    height: 16px;
+}
+
+.sectionTitle {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+    font-weight: 700;
+    color: var(--text-headers);
+}
+
+.sectionSubtitle {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    font-weight: 400;
+    color: var(--text-gray);
+}
+
+.featuresGrid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0px, 1fr));
+    gap: 32px;
+    align-items: center;
+}
+
+.featureItem {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.featureReverse {
+    flex-direction: row-reverse;
+}
+
+.featureTextBlock {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+}
+
+.featureHeader {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.featureIconWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    background-color: var(--primary);
+    flex-shrink: 0;
+    border-radius: 8px;
+}
+
+.featureIcon {
+    width: 24px;
+    height: 24px;
+    color: var(--white);
+}
+
+.featureTitle {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    font-weight: 700;
+    color: var(--text-headers);
+}
+
+.featureDescription {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+    color: var(--text-gray);
+}
+
+.featureStats {
+    display: flex;
+    align-items: center;
+    padding: 16px;
+    border-radius: 8px;
+    border: 1px solid var(--light-green-border);
+    background-color: var(--light-green-background);
+}
+
+.featureStatsText {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 600;
+    color: var(--dark-green-text);
+}
+
+.featureTags {
+    display: flex;
+    gap: 8px;
+}
+
+.featureTags>span {
+    display: flex;
+    align-items: center;
+    padding: 4px 12px;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    font-weight: 500;
+    border-radius: 8px;
+}
+
+.featureFirstTag {
+    background-color: var(--orange-background);
+    color: var(--dark-orange-text);
+}
+
+.featureSecondTag {
+    color: var(--purple-text);
+    background-color: var(--light-purple-background);
+}
+
+.featureImageBlock {}
+
+.imageWrapper {}
+
+.imageContainer {}
+
+.featureImage {}
+
+.mobileAppCTA {}
+
+.CTATitle {}
+
+.CTASubtitle {}
+
+.accessInstructions {}
+
+.instructionsTitle {}
+
+.instructionsList {}
+
+.appUnavailable {}
+
+.appUnavailableText {}
+
+.appUnavailableNote {}

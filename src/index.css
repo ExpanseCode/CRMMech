@@ -1,5 +1,5 @@
 :root {
-  --background: #ffffff; /* rgb(255 255 255) */
+  --white: #ffffff; /* rgb(255 255 255) */
   --foreground: #0b0e1a; /* rgb(11 14 26) */
   --muted: #f6f9fb; /* rgb(246 249 251) */
   --muted-foreground: #6c7890; /* rgb(108 120 144) */
@@ -23,6 +23,23 @@
   --card-border: #f3f4f6; /* rgb(243 244 246) */
   --light-green-icon: #dcfce7; /* rgb(220 252 231) */
   --dark-green-icon: #16a34a; /* rgb(22 163 74) */
+  --light-blue-background: #dbeafe  ; /* rgb(219 234 254) */
+  --text-blue: #1e40af;  /*rgba(30 64 175)*/
+  --light-green-border: #bbf7d0; /*187 247 208*/
+  --light-green-background: #f0fdf4  ; /*240 253 244*/
+  --dark-green-text: #166534; /*22 101 52*/
+  --orange-background: #ffedd5  ; /*255 237 213*/
+  --dark-orange-text: #9a3412  ; /*154 52 18*/
+  --purple-text: #6b21a8; /*107 33 168*/
+  --light-purple-background: #f3e8ff; /*243 232 255*/
+  --border-red: #fecaca; /* rgb(254 202 202) */
+  --border-orange: #fed7aa;  /*254 215 170*/
+  --border-purple: #e9d5ff  ; /* rgb(233 213 255)*/
+  --border-blue: #bfdbfe; /* rgb(191 219 254) */
+  --border-indigo: #c7d2fe; /* rgb(199 210 254) */
+  --border-dark-red: #fca5a5; /* rgb(252 165 165) */
+  
+  
 }
 
 @font-face {
@@ -52,7 +69,7 @@ body {
   font-family: 'Inter', sans-serif;
   font-weight: 400;
   color: var(--foreground);
-  background-color: var(--background);
+  background-color: var(--white);
   overflow-x: hidden;
 }
 
