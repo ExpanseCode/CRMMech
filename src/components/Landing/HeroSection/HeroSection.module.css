@@ -1,0 +1,462 @@
+.heroSection {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url(../../../assets/images/bgd.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0; /* то же самое что top: 0; right: 0; bottom: 0; left: 0; */
+  z-index: 1;
+}
+
+/* Градиент */
+.gradientOverlay {
+  background: linear-gradient(
+    to bottom right,
+    rgba(15, 23, 42, 0.9),
+    rgba(30, 58, 138, 0.8),
+    rgba(51, 65, 85, 0.9)
+  );
+}
+
+/* Дополнительное затемнение */
+.blackOverlay {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.heroContent {
+  position: relative;
+  z-index: 2; /* Выше градиентов */
+  display: flex;
+  gap: 12px;
+  width: 100%;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.leftSection {
+  width: 100%;
+}
+
+.topWrapper {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  border: 1px solid #22c55e4d;
+  border-radius: 9999px;
+  margin-bottom: 2rem;
+  width: 480px;
+  display: flex;
+  background-image: linear-gradient(
+    to right,
+    rgb(22, 163, 74, 0.2),
+    rgb(37, 99, 235, 0.2)
+  );
+}
+
+.textWithIconWrapper {
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+  padding-right: 16px;
+  padding-left: 16px;
+}
+
+.textWithIconWrapper:not(:last-child) {
+  border-right: 0.5px solid #9ca3af4d;
+}
+
+.icon {
+  width: 16px;
+  height: 16px;
+}
+
+.shield {
+  color: rgb(74 222 128);
+}
+
+.trendingUp {
+  color: rgb(96 165 250);
+}
+
+.zap {
+  color: rgb(250 204 21);
+}
+
+.text {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.number {
+  color: rgb(134 239 172);
+}
+
+.percent {
+  color: rgb(147 197 253);
+}
+
+.faster {
+  color: rgb(253 224 71);
+}
+
+.leftSectionText {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  color: rgb(229 231 235);
+  margin-bottom: 2rem;
+}
+
+.leftSection {
+  width: 100%;
+}
+
+.header {
+  font-size: 3.75rem;
+  line-height: 1;
+  color: var(--background);
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  width: 100%;
+}
+
+.headerAcent {
+  background: linear-gradient(90deg, #92c7f9 0%, #87eeaf 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.btnsWrapper {
+  display: flex;
+  margin-bottom: 3rem;
+  gap: 0.75rem;
+}
+
+.btnWithRocket {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--background);
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-family: inherit;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  background-image: linear-gradient(to right, #22c55e, #059669);
+  border-radius: 0.75rem;
+  border: none;
+  outline: none;
+  width: 141px;
+  cursor: pointer;
+  box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btnWithRocket:hover {
+  transform: scaleX(1.05) scaleY(1.05) translateY(-0.25rem);
+  background-image: linear-gradient(to right, #16a34a, #047857);
+  box-shadow: 0 25px 50px -12px rgb(34 197 94 / 0.2);
+}
+
+.btnWithRocket:hover .icon {
+  transform: rotate(12deg);
+}
+
+.playBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  font-family: inherit;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  cursor: pointer;
+  background-color: var(--background);
+  transition: color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  width: 136px;
+  border-radius: 0.75rem;
+  outline: none;
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1);
+}
+
+.playBtn:hover {
+  color: rgb(29 78 216);
+}
+
+.dewnloadBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1);
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  background-color: var(--background);
+  border-radius: 0.75rem;
+  cursor: pointer;
+  font-family: inherit;
+  background-color: transparent;
+  border: 2px solid #ffffff4d;
+  text-decoration: none;
+  color: var(--background);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.dewnloadBtn:hover {
+  color: hsl(222, 47%, 11%);
+  background-color: #ffffff1a;
+}
+
+.dewnloadBtn:hover .icon {
+  color: hsl(222, 47%, 11%);
+}
+
+.bottomIcon {
+  margin-right: 0.5rem;
+  color: var(--background);
+}
+
+.bottomWrapper {
+  width: 570px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+}
+
+.bottomElementWrapper {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.bottomText {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: rgb(209 213 219);
+}
+
+.shieldBottom {
+  color: rgb(96 165 250);
+}
+
+.rightSection {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.imgWrapper {
+  position: relative;
+  padding: 0.5rem;
+  background-color: var(--background);
+  border-radius: 1rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: scaleX(1) scaleY(1);
+  width: 100%;
+  height: auto;
+}
+
+.imgWrapper:hover {
+  transform: scaleX(1.05) scaleY(1.05);
+}
+
+.tabScreen {
+  width: 100%;
+  height: auto;
+}
+
+.absoluteSection {
+  color: var(--background);
+  font-weight: 500;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  border-radius: 9999px;
+  position: absolute;
+}
+
+.top {
+  background-color: rgb(34 197 94);
+  top: 1rem;
+  left: 1rem;
+}
+
+.bottom {
+  background-color: rgb(59 130 246);
+  right: 1rem;
+  bottom: 1rem;
+}
+
+.addImgWrapper {
+  padding: 0.75rem;
+  background-color: #fffffff2;
+  border: 1px solid #fff3;
+  border-radius: 1rem;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 116px;
+  height: 216px;
+  top: 73px;
+  right: 10px;
+}
+
+.addCarScreenImg {
+  width: 100%;
+  height: 155px;
+  object-fit: cover;
+  border-radius: 0.75rem;
+}
+
+.textWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  margin-top: 0.5rem;
+  margin-bottom: 0.25rem;
+}
+
+.dot {
+  background-color: rgb(34 197 94);
+  border-radius: 9999px;
+  width: 0.375rem;
+  height: 0.375rem;
+}
+
+.addText {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.addTextTop {
+  color: rgb(55 65 81);
+  font-weight: 500;
+}
+
+.addTextBottom {
+  color: rgb(234 88 12);
+  font-weight: 600;
+}
+
+.rightSideBottomWrapper {
+  position: absolute;
+  padding: 1.5rem;
+  background-image: linear-gradient(to right, var(--background), #f9fafb);
+  border: 1px solid var(--card-border);
+  border-radius: 1rem;
+  right: 390px;
+  bottom: 38px;
+}
+
+.bottomWrapperContent {
+  display: flex;
+  gap: 8px;
+}
+
+.yellow {
+  background-image: linear-gradient(to right, #facc15, #eab308);
+  width: 4rem;
+  height: 2.5rem;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.carNumber {
+  color: rgb(0 0 0);
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.bottomDot {
+  position: absolute;
+  background-color: rgb(34 197 94);
+  border-radius: 9999px;
+  width: 0.75rem;
+  height: 0.75rem;
+  top: -0.25rem;
+  right: -0.25rem;
+  border: 2px solid var(--background);
+}
+
+.bottomTextWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.carName {
+  color: var(--text-headers);
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.textWitnDotWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.bottomGreenDot {
+  background-color: rgb(34 197 94);
+  border-radius: 9999px;
+  width: 0.5rem;
+  height: 0.5rem;
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.7;
+  }
+}
+
+.rightSectionBottomText {
+  color: rgb(22 163 74);
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
