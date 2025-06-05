@@ -101,7 +101,7 @@
 .problemBottomContainer {
   text-align: center;
   padding: 2rem;
-  border-radius: 1.5rem;
+  border-radius: 1rem;
   background: linear-gradient(to right, #dc2626, #ea580c);
   color: white;
 }
