@@ -8,8 +8,8 @@
   display: flex;
   align-items: center;
   flex-direction: row;
-  /* gap: 3rem; */
-  justify-content: space-between;
+  gap: 3rem;
+  /* justify-content: space-between; */
 }
 
 .item:nth-child(2) {
@@ -17,7 +17,7 @@
 }
 
 .textPart {
-  width: 576px;
+  width: 584px;
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -49,10 +49,10 @@
 .highlight {
   font-size: 0.875rem;
   line-height: 1.25rem;
-  color: #166534;
+  color: var(--dark-green-text);
 
   padding: 0.25rem 0.75rem;
-  background-color: #dcfce7;
+  background-color: var(----light-green-icon);
   border-radius: 9999px;
 
   display: flex;
@@ -61,7 +61,7 @@
 }
 
 .stats {
-  color: #2463eb;
+  color: var(--primary);
   font-size: 1.875rem;
   line-height: 2.25rem;
   font-weight: 700;
@@ -87,11 +87,11 @@
 .imgBox {
   background-color: white;
   border-radius: 1rem;
-  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
   border: 1px solid #e1e7ef;
   padding: 1rem;
   transition: scale 0.5s ease-in-out;
-  width: 576px;
+  width: 584px;
 }
 
 .imgBox:hover {
