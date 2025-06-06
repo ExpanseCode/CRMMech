@@ -195,6 +195,13 @@ export default function HeroSection() {
           </div>
         </motion.div>
       </div>
+      <motion.div
+        animate={{ y: [0, 10, 0] }}
+        transition={{ duration: 2, repeat: Infinity }}
+        className={css.arrowWrapper}
+      >
+        <ChevronDown className={css.arrow} />
+      </motion.div>
     </div>
   );
 }
