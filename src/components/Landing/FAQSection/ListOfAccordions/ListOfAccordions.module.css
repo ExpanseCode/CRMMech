@@ -8,7 +8,6 @@
   background-color: white;
   box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   border-radius: 0.5rem;
-  /* transition: height 0.5s ease-in-out; */
 }
 
 .accordionTrigger {
@@ -36,8 +35,15 @@
 .accordionChevron {
   width: 1rem;
   height: 1rem;
+  display: inline-block;
+  transform: rotate(0deg);
   transition: transform 0.5s ease-in-out;
+  transform-origin: center;
 }
+
+/* .accordionTrigger[data-state='open'] .accordionChevron {
+  transform: rotate(180deg);
+} */
 
 .rotated {
   transform: rotate(180deg);
@@ -45,13 +51,36 @@
 
 .accordionContent {
   overflow: hidden;
-  transition: height 300ms ease, opacity 300ms ease;
-  /* will-change: height; */
-  opacity: 0;
-  height: 0;
 }
 
-.accordionContent[data-state='open'] {
+:global(.item)[data-state='open'] {
+  animation: slideDown 500ms cubic-bezier(0.87, 0, 0.13, 1);
+  animation-fill-mode: forwards;
+}
+
+:global(.item)[data-state='closed'] {
+  animation: slideUp 500ms cubic-bezier(0.87, 0, 0.13, 1);
+  animation-fill-mode: forwards;
+}
+
+@keyframes slideDown {
+  from {
+    height: 0;
+  }
+  to {
+    height: var(--radix-accordion-content-height);
+  }
+}
+@keyframes slideUp {
+  from {
+    height: var(--radix-accordion-content-height);
+  }
+  to {
+    height: 0;
+  }
+}
+
+/* .accordionContent[data-state='open'] {
   height: var(--radix-accordion-content-height);
   opacity: 1;
 }
@@ -59,7 +88,7 @@
 .accordionContent[data-state='closed'] {
   height: 0;
   opacity: 0;
-}
+} */
 /* @keyframes accordion-open {
   from {
     height: 0;
@@ -80,6 +109,36 @@
     height: 0;
     opacity: 0;
   }
+} */
+
+/* @keyframes accordion-down {
+  from {
+    height: 0;
+  }
+  to {
+    height: var(--radix-accordion-content-height);
+  }
+}
+
+@keyframes accordion-up {
+  from {
+    height: var(--radix-accordion-content-height);
+  }
+  to {
+    height: 0;
+  }
+}
+
+.accordionContent {
+  overflow: hidden;
+}
+
+.accordionContent[data-state='open'] {
+  animation: accordion-down 0.2s ease-out;
+}
+
+.accordionContent[data-state='closed'] {
+  animation: accordion-up 0.2s ease-out;
 } */
 
 .accordionContentText {

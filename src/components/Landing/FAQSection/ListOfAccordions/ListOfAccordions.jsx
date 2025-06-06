@@ -60,7 +60,11 @@ export default function ListOfAccordions(params) {
       >
         {children}
         <ChevronDown
-          className={`${css.accordionChevron} ${isOpen && css.rotated}`}
+          //   style={{
+          //     transform: isOpen ? 'rotate(180deg)' : 'rotate(0deg)',
+          //     transition: 'transform 0.5s ease-in-out',
+          //   }}
+          className={`${css.accordionChevron} ${isOpen ? css.rotated : ''}`}
           aria-hidden
         />
       </AccordionPrimitive.Trigger>
@@ -102,6 +106,7 @@ export default function ListOfAccordions(params) {
             className={css.item}
           >
             <AccordionTrigger isOpen={openItem === `item-${index}`}>
+              {/* {console.log('isOpen', openItem === `item-${index}`)} */}
               <p className={css.question}>{item.question}</p>
             </AccordionTrigger>
             <AccordionContent>{item.answer}</AccordionContent>
