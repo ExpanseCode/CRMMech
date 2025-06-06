@@ -1,0 +1,109 @@
+.section{
+
+}
+.sectionContainer {
+  padding: 0 4rem;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.title {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 700;
+  color: var(--text-headers);
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  color: var(--text-gray);
+  max-width: 42rem;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.card {
+    /* width: 248px; */
+    height: 212px;
+  background-color: var(--white);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+  transform: translateY(-4px);
+}
+
+.iconWrapper {
+  width: 4rem;
+  height: 4rem;
+  background-color: var(--light-blue-background);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem auto;
+}
+
+.icon {
+  width: 2rem;
+  height: 2rem;
+  /* color: #3b82f6; */
+  color: var(--primary-icon);
+}
+
+.cardTitle {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+  color:var(--text-headers);
+  margin-bottom: 0.5rem;
+}
+
+.cardDescription {
+  color: var(--text-gray);
+  line-height: 1.5rem;
+  font-size: 1rem;
+}
+
+/* 📱 Медіа-запити на зменшення ширини */
+
+/* Планшет ~1024px */
+/* @media (max-width: 1200px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+} */
+
+/* Мобільний ~640px */
+/* @media (max-width: 700px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .title {
+    font-size: 1.875rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .card {
+    padding: 1rem;
+  }
+} */
