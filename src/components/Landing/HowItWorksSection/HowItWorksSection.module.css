@@ -1,16 +1,16 @@
 .section {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
   background: linear-gradient(to bottom right, #eff6ff, var(--white));
-  max-width: 80rem;
-  margin-left: auto;
-  margin-right: auto;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 0 32px;
+  gap: 64px;
 }
 
 .topTextWrapper {
-  margin-bottom: 4rem;
+  /* margin-bottom: 4rem; */
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -35,18 +35,23 @@
 }
 
 .red {
-  color: rgb(220 38 38);
+  color: var(--red-text)
 }
 
 .green {
   color: var(--dark-green-icon);
 }
 
+.topSection{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
 .firstSection {
   display: flex;
   gap: 2rem;
   align-items: center;
-  margin-top: 32px;
 }
 
 .firstSectionWrapper {
@@ -64,7 +69,7 @@
   font-weight: 700;
   font-size: 1.125rem;
   line-height: 1.75rem;
-  background-color: rgb(37 99 235);
+  background-color: var(--primary);
   border-radius: 9999px;
   display: flex;
   align-items: center;
@@ -166,7 +171,7 @@
 }
 
 .textGreen {
-  color: rgb(22 101 52);
+  color: var(--dark-green-text);
   background-color: var(--light-green-background);
   border-color: var(--light-green-border);
   border-radius: 0.75rem;
@@ -180,7 +185,7 @@
 }
 
 .textYellow {
-  color: rgb(133 77 14);
+  color: var(--dark-orange-text);
   background-color: rgb(254 252 232);
   border-color: rgb(254 240 138);
   border-radius: 0.75rem;
@@ -221,7 +226,6 @@
   text-align: center;
   padding: 2rem;
   border-radius: 1.5rem;
-  margin-top: 4rem;
   background: linear-gradient(to bottom right, var(--dark-green-icon), #2563eb);
 }
 
@@ -235,7 +239,6 @@
 .bottomSectionSubHeader {
   font-size: 1.25rem;
   line-height: 1.75rem;
-  margin-bottom: 1.5rem;
 }
 
 .bottomSectionWrapper {
