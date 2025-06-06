@@ -101,7 +101,7 @@ export default function HeroSection() {
           >
             <button type="button" className={css.btnWithRocket}>
               <Rocket className={css.icon} />
-              🚀 Тест
+              🚀 Спробувати
             </button>
             <button type="button" className={css.playBtn}>
               <Play className={css.icon} />
@@ -110,7 +110,7 @@ export default function HeroSection() {
             <a
               href="/src/assets/CRMmech-Презентація.pdf"
               download={'CRMmech-Презентація.pdf'}
-              className={css.dewnloadBtn}
+              className={css.downloadBtn}
             >
               <Download className={`${css.icon} ${css.bottomIcon}`} />
               📄 Презентація
@@ -157,42 +157,46 @@ export default function HeroSection() {
               10 авто всього
             </p>
           </div>
-        </motion.div>
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.8 }}
-          className={css.addImgWrapper}
-        >
-          <img src={addCarScreenPhoto} alt="" className={css.addCarScreenImg} />
-          <div className={css.textWrapper}>
-            <div className={css.dot}></div>
-            <p className={`${css.addText} ${css.addTextTop}`}>Додаток</p>
-          </div>
-
-          <p className={`${css.addText} ${css.addTextBottom}`}>🔧 МЕХАНИКА</p>
-        </motion.div>
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.8 }}
-          className={css.rightSideBottomWrapper}
-        >
-          <div className={css.bottomWrapperContent}>
-            <div className={css.yellow}>
-              <p className={css.carNumber}>AA1234BC</p>
-              <div className={css.bottomDot}></div>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.8 }}
+            className={css.addImgWrapper}
+          >
+            <img
+              src={addCarScreenPhoto}
+              alt=""
+              className={css.addCarScreenImg}
+            />
+            <div className={css.textWrapper}>
+              <div className={css.dot}></div>
+              <p className={`${css.addText} ${css.addTextTop}`}>Додаток</p>
             </div>
-            <div className={css.bottomTextWrapper}>
-              <p className={css.carName}>Honda Civic 2018</p>
-              <div className={css.textWitnDotWrapper}>
-                <p className={css.bottomGreenDot}></p>
-                <p className={css.rightSectionBottomText}>
-                  Розпізнано за 2.3 сек
-                </p>
+
+            <p className={`${css.addText} ${css.addTextBottom}`}>🔧 МЕХАНИКА</p>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.8 }}
+            className={css.rightSideBottomWrapper}
+          >
+            <div className={css.bottomWrapperContent}>
+              <div className={css.yellow}>
+                <p className={css.carNumber}>AA1234BC</p>
+                <div className={css.bottomDot}></div>
+              </div>
+              <div className={css.bottomTextWrapper}>
+                <p className={css.carName}>Honda Civic 2018</p>
+                <div className={css.textWitnDotWrapper}>
+                  <p className={css.bottomGreenDot}></p>
+                  <p className={css.rightSectionBottomText}>
+                    Розпізнано за 2.3 сек
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
+          </motion.div>
         </motion.div>
       </div>
       <motion.div

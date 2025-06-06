@@ -14,18 +14,17 @@
 
 .overlay {
   position: absolute;
-  inset: 0; /* то же самое что top: 0; right: 0; bottom: 0; left: 0; */
+  inset: 0;
+  /* то же самое что top: 0; right: 0; bottom: 0; left: 0; */
   z-index: 1;
 }
 
 /* Градиент */
 .gradientOverlay {
-  background: linear-gradient(
-    to bottom right,
-    rgba(15, 23, 42, 0.9),
-    rgba(30, 58, 138, 0.8),
-    rgba(51, 65, 85, 0.9)
-  );
+  background: linear-gradient(to bottom right,
+      rgba(15, 23, 42, 0.9),
+      rgba(30, 58, 138, 0.8),
+      rgba(30, 41, 59, 0.9));
 }
 
 /* Дополнительное затемнение */
@@ -34,11 +33,17 @@
 }
 
 .heroContent {
+  max-width: 1280px;
   position: relative;
-  z-index: 2; /* Выше градиентов */
-  display: flex;
-  gap: 12px;
-  width: 100%;
+  z-index: 2;
+  /* Выше градиентов */
+  /* display: flex;
+  gap: 12px; */
+  /* width: 100%; */
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0px, 1fr));
+  gap: 3rem;
+  align-items: center;
   padding-left: 2rem;
   padding-right: 2rem;
 }
@@ -57,11 +62,9 @@
   margin-bottom: 2rem;
   width: 480px;
   display: flex;
-  background-image: linear-gradient(
-    to right,
-    rgb(22, 163, 74, 0.2),
-    rgb(37, 99, 235, 0.2)
-  );
+  background-image: linear-gradient(to right,
+      rgb(22, 163, 74, 0.2),
+      rgb(37, 99, 235, 0.2));
 }
 
 .textWithIconWrapper {
@@ -152,21 +155,19 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 2.5rem;
   gap: 0.5rem;
   color: var(--white);
   font-weight: 700;
   font-size: 1rem;
   line-height: 1.5rem;
   font-family: inherit;
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+  padding: 0.75rem 1.25rem;
   background-image: linear-gradient(to right, #22c55e, #059669);
   border-radius: 0.75rem;
   border: none;
   outline: none;
-  width: 141px;
+  /* width: 141px; */
   cursor: pointer;
   box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -186,6 +187,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 2.5rem;
+  padding: 0.75rem 1.25rem;
   gap: 0.5rem;
   font-weight: 600;
   font-family: inherit;
@@ -194,8 +197,9 @@
   cursor: pointer;
   background-color: var(--white);
   transition: color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  width: 136px;
+  /* width: 136px; */
   border-radius: 0.75rem;
+  border: none;
   outline: none;
   box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1);
 }
@@ -204,36 +208,34 @@
   color: rgb(29 78 216);
 }
 
-.dewnloadBtn {
+.downloadBtn {
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 2.5rem;
   gap: 0.5rem;
   box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1);
   font-weight: 600;
   font-size: 1rem;
   line-height: 1.5rem;
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
+  padding: 0.75rem 1.25rem;
   background-color: var(--white);
   border-radius: 0.75rem;
   cursor: pointer;
   font-family: inherit;
-  background-color: transparent;
+  background-color: rgb(51 65 85);
   border: 2px solid #ffffff4d;
   text-decoration: none;
   color: var(--white);
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.dewnloadBtn:hover {
+.downloadBtn:hover {
   color: hsl(222, 47%, 11%);
   background-color: #ffffff1a;
 }
 
-.dewnloadBtn:hover .icon {
+.downloadBtn:hover .icon {
   color: hsl(222, 47%, 11%);
 }
 
@@ -274,7 +276,7 @@
 }
 
 .imgWrapper {
-  position: relative;
+  /* position: relative; */
   padding: 0.5rem;
   background-color: var(--white);
   border-radius: 1rem;
@@ -329,8 +331,10 @@
   align-items: center;
   width: 116px;
   height: 216px;
-  top: 73px;
-  right: 10px;
+  /* top: 73px;
+  right: 10px; */
+  top: -1.5rem;
+  right: -1.5rem;
 }
 
 .addCarScreenImg {
@@ -377,13 +381,16 @@
   background-image: linear-gradient(to right, var(--white), #f9fafb);
   border: 1px solid var(--card-border);
   border-radius: 1rem;
-  right: 390px;
-  bottom: 38px;
+  /* right: 390px;
+  bottom: 38px; */
+  left: -2rem;
+  bottom: -2rem;
 }
 
 .bottomWrapperContent {
   display: flex;
-  gap: 8px;
+  align-items: center;
+  gap: 1rem;
 }
 
 .yellow {
@@ -443,11 +450,13 @@
 }
 
 @keyframes pulse {
+
   0%,
   100% {
     transform: scale(1);
     opacity: 1;
   }
+
   50% {
     transform: scale(1.05);
     opacity: 0.7;
@@ -465,13 +474,16 @@
   position: absolute;
   bottom: 2rem;
   left: 50%;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  /* padding-left: 2rem;
+  padding-right: 2rem; */
   transform: translateY(-50%);
+  color: var(--white);
+  z-index: 9;
 }
 
 .arrow {
-  color: var(--white);
+  color: inherit;
+  display: block;
   opacity: 0.7;
   width: 2rem;
   height: 2rem;
