@@ -85,8 +85,7 @@
   /* rgb(185 28 28) */
   --yellow: #facc15;
   /* rgb(250 204 21) */
-
-
+  --primary-icon: #365df7; /* HSL(221, 83%, 53%) */
 }
 
 @font-face {
