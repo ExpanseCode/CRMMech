@@ -1,9 +1,8 @@
 .section{
-  background: var(--light-grey-background);
 
 }
 .sectionContainer {
-  padding: 0 2rem;
+  padding: 0 4rem;
 }
 
 .header {
@@ -13,6 +12,7 @@
 
 .title {
   font-size: 2.25rem;
+  line-height: 2.5rem;
   font-weight: 700;
   color: var(--text-headers);
   margin-bottom: 1rem;
@@ -20,6 +20,7 @@
 
 .subtitle {
   font-size: 1.25rem;
+  line-height: 1.75rem;
   color: var(--text-gray);
   max-width: 42rem;
   margin: 0 auto;
@@ -75,6 +76,8 @@
 
 .cardDescription {
   color: var(--text-gray);
+  line-height: 1.5rem;
+  font-size: 1rem;
 }
 
 /* 📱 Медіа-запити на зменшення ширини */
