@@ -7,6 +7,10 @@
   justify-content: space-between;
   backdrop-filter: blur(10px);
   /* background: rgba(106, 104, 104, 0.46); */
+  /* background: linear-gradient(to bottom right,
+        rgba(15, 23, 42, 0.9),
+        rgba(30, 58, 138, 0.8),
+        rgba(30, 41, 59, 0.9)); */
   height: 72px;
   position: fixed;
   top: 0;
@@ -29,6 +33,7 @@
 .link {
   text-decoration: none;
   color: var(--text-gray);
+  /* color: var(--white); */
   font-weight: 600;
   font-size: 1.25rem;
   cursor: pointer;
