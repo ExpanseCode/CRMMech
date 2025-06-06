@@ -122,17 +122,26 @@ export default function PricingSection() {
                 <p className={css.cardThirdText}>{plan.description}</p>
                 <p className={css.italicText}>{plan.benefit}</p>
               </div>
-              <button
+              {/* <button
                 type="button"
                 className={`${css[plan.buttonColor]} ${css.cardBtn}`}
-                // onClick={() =>
-                //   window.open('https://forms.gle/oShc79zDeNqAyQ5p8', '_blank')
-                // }
+                onClick={() =>
+                  window.open('https://forms.gle/oShc79zDeNqAyQ5p8', '_blank')
+                }
               >
                 {plan.name === 'Profi'
                   ? '📞 Отримати індивідуальну пропозицію'
                   : '⚡ Замовити'}
-              </button>
+              </button> */}
+              <a
+                className={`${css[plan.buttonColor]} ${css.cardBtn}`}
+                href="https://forms.gle/oShc79zDeNqAyQ5p8"
+                target="_blank"
+              >
+                {plan.name === 'Profi'
+                  ? '📞 Отримати індивідуальну пропозицію'
+                  : '⚡ Замовити'}
+              </a>
             </motion.div>
           ))}
         </div>
@@ -165,10 +174,10 @@ export default function PricingSection() {
             🧠 Чому ми рахуємо пости, а не камери?
           </h3>
           <div className={css.whyPostsTextWrapper}>
-            <p className={css.textCenter}>
-              <strong>Тому що саме пост — це ваша точка прибутку.</strong>
+            <p className={css.textCenterBold}>
+              Тому що саме пост — це ваша точка прибутку
             </p>
-            <p>
+            <p className={css.textCenter}>
               CRMmech рахує, скільки машин заїхало, скільки часу реально
               працював майстер, і де втрачається прибуток.
             </p>
