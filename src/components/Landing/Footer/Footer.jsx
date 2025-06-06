@@ -25,7 +25,7 @@ export default function Footer() {
                 <FiFacebook className={styles.socialIcon} />
               </a>
               <a
-                href="https://instagram.com/avtoatmosfera_com"
+                href="https://www.instagram.com/crmmech/"
                 className={styles.socialLink}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -33,7 +33,7 @@ export default function Footer() {
                 <FaInstagram className={styles.socialIcon} />
               </a>
               <a
-                href="https://www.linkedin.com/company/crm-mech/posts/?feedView=all"
+                href="https://www.linkedin.com/company/crm-mech/"
                 className={styles.socialLink}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -41,12 +41,12 @@ export default function Footer() {
                 <FiLinkedin className={styles.socialIcon} />
               </a>
               <a
-                href="https://www.youtube.com/@AvtoAtmosfera"
+                href="https://youtu.be/w_XSB5hDMyo"
                 className={styles.socialLink}
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <PiYoutubeLogo className={styles.socialYoutub} />
+                <PiYoutubeLogo className={styles.socialYoutube} />
               </a>
             </div>
           </div>
@@ -60,7 +60,7 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="#" className={styles.link}>
+                <a href="#pricing" className={styles.link}>
                   Ціни
                 </a>
               </li>
