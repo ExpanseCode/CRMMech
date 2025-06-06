@@ -7,6 +7,7 @@ import {
   Zap,
 } from 'lucide-react';
 import css from './ListOfExtraFeatures.module.css';
+import { motion } from 'framer-motion';
 
 export default function ListOfExtraFeatures(params) {
   const additionalFeatures = [
@@ -57,7 +58,16 @@ export default function ListOfExtraFeatures(params) {
   return (
     <ul className={css.list}>
       {additionalFeatures.map((item, index) => (
-        <li key={index} className={css.item}>
+        <motion.div
+          key={index}
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: index * 0.1 }}
+          viewport={{ once: true }}
+          whileHover={{ y: -6, scale: 1.02 }}
+          className={css.item}
+        >
+          {/* <li key={index} className={css.item}> */}
           <div
             style={{ backgroundColor: `${item.color}` }}
             className={css.iconBox}
@@ -66,7 +76,8 @@ export default function ListOfExtraFeatures(params) {
           </div>
           <p className={css.title}>{item.title}</p>
           <p className={css.descr}>{item.description}</p>
-        </li>
+          {/* </li> */}
+        </motion.div>
       ))}
     </ul>
   );

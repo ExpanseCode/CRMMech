@@ -93,7 +93,6 @@ export default function MobAppSection() {
 
               {/* Mobile Screenshot */}
               <div className={css.featureImageBlock}>
-                <div className={css.imageWrapper}>
                   <div className={css.imageContainer}>
                     <img
                       src={feature.image}
@@ -101,7 +100,6 @@ export default function MobAppSection() {
                       className={css.featureImage}
                     />
                   </div>
-                </div>
               </div>
             </div>
           ))}
