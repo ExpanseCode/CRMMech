@@ -14,7 +14,7 @@ export default function FAQSection() {
           // className="text-center mb-16"
         >
           <div className={css.titleBox}>
-            <p className={css.title}>Часті запитання</p>
+            <h2 className={css.title}>Часті запитання</h2>
             <p className={css.description}>
               Відповіді на найпоширеніші питання про CRMmech
             </p>
