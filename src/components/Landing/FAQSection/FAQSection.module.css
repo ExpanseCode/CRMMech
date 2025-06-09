@@ -1,7 +1,14 @@
 .section {
-  width: 100%;
-  background-color: #f9fafb;
-  border-radius: 0.5rem;
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .section {
+    display: block;
+    width: 100%;
+    background-color: #f9fafb;
+    border-radius: 0.5rem;
+  }
 }
 
 .container {
