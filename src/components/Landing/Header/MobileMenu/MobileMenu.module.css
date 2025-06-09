@@ -112,3 +112,13 @@
 .freeTestLink:hover {
   background-color: #002b87;
 }
+
+.mobVersion {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .mobVersion {
+    display: flex;
+  }
+}

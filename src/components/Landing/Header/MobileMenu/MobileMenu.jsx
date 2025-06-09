@@ -47,7 +47,7 @@ export default function MobileMenu({ scrollToSection }) {
     >
       <div className={css.mobMenuWrapper}>
         <ul className={css.navList}>
-          <li className={css.item}>
+          <li className={`${css.item} ${css.mobVersion}`}>
             <div
               className={css.link}
               onClick={() => scrollToSection('problems')}
@@ -83,7 +83,7 @@ export default function MobileMenu({ scrollToSection }) {
               Тарифи
             </div>
           </li>
-          <li className={css.item}>
+          <li className={`${css.item} ${css.mobVersion}`}>
             <div
               className={css.link}
               onClick={() => scrollToSection('feedback')}
@@ -91,7 +91,7 @@ export default function MobileMenu({ scrollToSection }) {
               Відгуки
             </div>
           </li>
-          <li className={css.item}>
+          <li className={`${css.item} ${css.mobVersion}`}>
             <div className={css.link} onClick={() => scrollToSection('faq')}>
               FAQ
             </div>
