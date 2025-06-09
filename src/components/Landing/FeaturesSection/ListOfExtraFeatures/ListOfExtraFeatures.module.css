@@ -1,10 +1,29 @@
 .list {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  display: flex;
+  /* grid-template-columns: repeat(3, minmax(0, 1fr)); */
   /* flex-wrap: wrap; */
+  flex-direction: column;
   gap: 1.5rem;
   align-items: center;
   margin-top: 4rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .list {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    /* flex-wrap: wrap; */
+    gap: 1.5rem;
+    align-items: center;
+    margin-top: 4rem;
+  }
 }
 
 .item {

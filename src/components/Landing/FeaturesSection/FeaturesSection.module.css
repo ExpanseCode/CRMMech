@@ -13,10 +13,11 @@
 }
 
 .title {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
   font-weight: 700;
   color: var(--text-headers);
+  text-align: center;
 }
 
 .descr {
@@ -24,6 +25,13 @@
   font-size: 1.25rem;
   line-height: 1.75rem;
   text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .title {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
 }
 
 .modalContainer {
@@ -42,6 +50,7 @@
 
 .imgBox {
   position: relative;
+  padding: 1rem;
 }
 
 .closeBtn {
