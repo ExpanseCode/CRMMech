@@ -1,36 +1,46 @@
-.container {
-  padding: 0 32px;
+.problems {
+  display: none;
 }
 
-.title {
+@media only screen and (min-width: 768px) {
+  .problems {
+    display: block;
+  }
+
+  .container {
+    padding: 0 1.5rem;
+  }
+
+  .sectionSubtitle {
+    width: 100%;
+    max-width: 768px;
+    color: var(--text-gray);
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    text-align: center;
+  }
+
+  .gridContainer {
+    display: grid;
+    gap: 2rem;
+    margin-bottom: 4rem;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .title {
+        max-width: 48rem;
   font-size: 3rem;
   line-height: 1;
   font-weight: 700;
   color: var(--text-headers);
   text-align: center;
 }
-
 .sectionHeader {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 24px;
-  margin-bottom: 64px;
-}
-
-.sectionSubtitle {
-  width: 768px;
-  color: var(--text-gray);
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-  text-align: center;
-}
-
-.gridContainer {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0px, 1fr));
-  gap: 2rem;
-  margin-bottom: 48px;
+  gap: 1.5rem;
+  margin-bottom: 4rem;
 }
 
 .card {
@@ -53,8 +63,8 @@
 }
 
 .problemIconWrapper {
-  width: 64px;
-  height: 64px;
+  width: 4rem;
+  height: 4rem;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -64,8 +74,8 @@
 }
 
 .problemIcon {
-  width: 32px;
-  height: 32px;
+  width: 2rem;
+  height: 2rem;
 }
 
 .problemTitle {
@@ -184,3 +194,21 @@
   stroke: #b91c1c;
   color: #b91c1c;
 }
+
+}
+
+@media only screen and (min-width: 1280px) {
+  .gridContainer {
+    grid-template-columns: repeat(3, minmax(0px, 1fr));
+  }
+
+  .container {
+    padding: 0 2rem;
+  }
+
+   .sectionSubtitle {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
