@@ -18,7 +18,7 @@ function App() {
           {/* <Route path="/api-docs" element={ApiDocsPage} /> */}
           <Route path="/modules" element={<AllModulesPage />} />
           <Route path="/modules/:id" element={<ModuleDetailsPage />} />
-          {/* <Route element={NotFound} /> */}
+          <Route element={NotFound} />
         </Routes>
       </>
     </Layout>
