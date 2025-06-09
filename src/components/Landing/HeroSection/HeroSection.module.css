@@ -1,7 +1,6 @@
 .heroSection {
   position: relative;
   width: 100%;
-  height: 100vh;
   background-image: url(../../../assets/images/bgd.webp);
   background-repeat: no-repeat;
   background-size: cover;
@@ -10,6 +9,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media screen and (min-width: 1279.98px) {
+  .heroSection {
+    height: 100vh;
+  }
 }
 
 .overlay {
@@ -21,10 +26,12 @@
 
 /* Градиент */
 .gradientOverlay {
-  background: linear-gradient(to bottom right,
-      rgba(15, 23, 42, 0.9),
-      rgba(30, 58, 138, 0.8),
-      rgba(30, 41, 59, 0.9));
+  background: linear-gradient(
+    to bottom right,
+    rgba(15, 23, 42, 0.9),
+    rgba(30, 58, 138, 0.8),
+    rgba(30, 41, 59, 0.9)
+  );
 }
 
 /* Дополнительное затемнение */
@@ -33,19 +40,34 @@
 }
 
 .heroContent {
-  max-width: 1280px;
   position: relative;
   z-index: 2;
-  /* Выше градиентов */
-  /* display: flex;
-  gap: 12px; */
-  /* width: 100%; */
   display: grid;
-  grid-template-columns: repeat(2, minmax(0px, 1fr));
-  gap: 3rem;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
   align-items: center;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  gap: 3rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 767.98px) {
+  .heroContent {
+    max-width: 767.98px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1279.98px) {
+  .heroContent {
+    max-width: 1279.98px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0px, 1fr));
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
 }
 
 .leftSection {
@@ -53,26 +75,43 @@
 }
 
 .topWrapper {
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
+  border: 1px solid #22c55e4d;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
-  border: 1px solid #22c55e4d;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
   border-radius: 9999px;
   margin-bottom: 2rem;
-  width: 480px;
+  width: 100%;
   display: flex;
-  background-image: linear-gradient(to right,
-      rgb(22, 163, 74, 0.2),
-      rgb(37, 99, 235, 0.2));
+  background-image: linear-gradient(
+    to right,
+    rgb(22, 163, 74, 0.2),
+    rgb(37, 99, 235, 0.2)
+  );
+}
+
+@media screen and (min-width: 767.98px) {
+  .topWrapper {
+    width: 480px;
+  }
 }
 
 .textWithIconWrapper {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   gap: 4px;
   padding-right: 16px;
   padding-left: 16px;
+}
+
+@media screen and (min-width: 767.98px) {
+  .textWithIconWrapper {
+    flex-direction: row;
+    align-items: start;
+  }
 }
 
 .textWithIconWrapper:not(:last-child) {
@@ -118,23 +157,44 @@
 }
 
 .leftSectionText {
-  font-size: 1.5rem;
-  line-height: 2rem;
-  color: rgb(229 231 235);
+  line-height: 1.625;
+  font-size: 1.25rem;
   margin-bottom: 2rem;
+  color: rgb(229 231 235);
+}
+
+@media screen and (min-width: 1279.98px) {
+  .leftSectionText {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
 }
 
 .leftSection {
   width: 100%;
+  text-align: center;
+}
+
+@media screen and (min-width: 1279.98px) {
+  .leftSection {
+    text-align: start;
+  }
 }
 
 .header {
-  font-size: 3.75rem;
-  line-height: 1;
+  font-size: 2.25rem;
+  line-height: 1.25;
   color: var(--white);
   font-weight: 700;
   margin-bottom: 1.5rem;
   width: 100%;
+}
+
+@media screen and (min-width: 1279.98px) {
+  .header {
+    line-height: 1;
+    font-size: 3.75rem;
+  }
 }
 
 .headerAcent {
@@ -147,8 +207,22 @@
 
 .btnsWrapper {
   display: flex;
+  flex-direction: column;
   margin-bottom: 3rem;
   gap: 0.75rem;
+}
+
+@media screen and (min-width: 767.98px) {
+  .btnsWrapper {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1279.98px) {
+  .btnsWrapper {
+    justify-content: start;
+  }
 }
 
 .btnWithRocket {
@@ -245,16 +319,31 @@
 }
 
 .bottomWrapper {
-  width: 570px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
   gap: 1rem;
+}
+
+@media screen and (min-width: 767.98px) {
+  .bottomWrapper {
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 570px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .bottomElementWrapper {
   display: flex;
   gap: 4px;
   align-items: center;
+  justify-content: center;
+}
+
+@media screen and (min-width: 1279.98px) {
+  .bottomElementWrapper {
+    justify-content: start;
+  }
 }
 
 .bottomText {
@@ -329,12 +418,21 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 116px;
-  height: 216px;
+  width: 114px;
+  height: 214px;
   /* top: 73px;
   right: 10px; */
-  top: -1.5rem;
-  right: -1.5rem;
+  top: -2.5rem;
+  right: -0.5rem;
+}
+
+@media screen and (min-width: 1279.98px) {
+  .addImgWrapper {
+    width: 116px;
+    height: 216px;
+    right: -1.5rem;
+    top: -1.5rem;
+  }
 }
 
 .addCarScreenImg {
@@ -377,20 +475,34 @@
 
 .rightSideBottomWrapper {
   position: absolute;
-  padding: 1.5rem;
+  padding: 0.5rem;
   background-image: linear-gradient(to right, var(--white), #f9fafb);
   border: 1px solid var(--card-border);
   border-radius: 1rem;
   /* right: 390px;
   bottom: 38px; */
-  left: -2rem;
-  bottom: -2rem;
+  left: -1rem;
+  bottom: 0rem;
+}
+
+@media screen and (min-width: 1279.98px) {
+  .rightSideBottomWrapper {
+    padding: 1.5rem;
+    bottom: -2rem;
+    left: -2rem;
+  }
 }
 
 .bottomWrapperContent {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 0.5rem;
+}
+
+@media screen and (min-width: 1279.98px) {
+  .bottomWrapperContent {
+    gap: 1rem;
+  }
 }
 
 .yellow {
@@ -450,7 +562,6 @@
 }
 
 @keyframes pulse {
-
   0%,
   100% {
     transform: scale(1);
@@ -470,15 +581,17 @@
   line-height: 1.25rem;
 }
 
-.arrowWrapper {
-  position: absolute;
-  bottom: 2rem;
-  left: 50%;
-  /* padding-left: 2rem;
-  padding-right: 2rem; */
-  transform: translateY(-50%);
-  color: var(--white);
-  z-index: 9;
+@media screen and (min-width: 1279.98px) {
+  .arrowWrapper {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    /* padding-left: 2rem;
+    padding-right: 2rem; */
+    transform: translateY(-50%);
+    color: var(--white);
+    z-index: 9;
+  }
 }
 
 .arrow {
