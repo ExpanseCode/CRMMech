@@ -5,13 +5,14 @@
   flex-direction: column;
   gap: 1.5rem;
   align-items: center;
-  margin-top: 4rem;
+  margin-top: 2rem;
 }
 
 @media only screen and (min-width: 768px) {
   .list {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
+    margin-top: 3rem;
   }
 }
 
