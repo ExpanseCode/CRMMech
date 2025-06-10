@@ -81,7 +81,7 @@ export default function ProblemsSection() {
   ];
 
   return (
-    <section id="problems">
+    <section id="problems" className={css.problems}>
       <div className={css.container}>
         {/* Section Header */}
         <motion.div
