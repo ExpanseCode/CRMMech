@@ -4,6 +4,8 @@ import css from './Header.module.css';
 import Popup from './Popup/Popup';
 import { IoIosArrowDown } from 'react-icons/io';
 import { motion, AnimatePresence } from 'framer-motion';
+import { Menu, X } from 'lucide-react';
+import MobileMenu from './MobileMenu/MobileMenu';
 
 export default function Header() {
   const [isActive, setIsActive] = useState(false);
@@ -134,8 +136,19 @@ export default function Header() {
               Замовити
             </a>
           </div>
-        </nav>
+          <button
+            className={css.mobMenuBtn}
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+          >
+            {isMobileMenuOpen ? (
+              <X className={css.mobMenuIcon} />
+            ) : (
+              <Menu className={css.mobMenuIcon} />
+            )}
+          </button>{' '}
+        </nav>{' '}
       </motion.nav>
+      {isMobileMenuOpen && <MobileMenu scrollToSection={scrollToSection} />}
     </div>
   );
 }
