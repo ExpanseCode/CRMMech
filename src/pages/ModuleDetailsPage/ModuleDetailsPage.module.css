@@ -1,0 +1,273 @@
+.pageWrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  font-family: 'Inter', sans-serif;
+  color: #333;
+}
+
+.headerWrapper {
+  background-color: #f9fafb;
+  padding: 1rem 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.headerInner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.headerContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.backWrapper {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.backButton {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #2563eb; /* blue-600 */
+}
+
+.backIcon {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.iconAndTitle {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.iconWrapper {
+  width: 3rem;
+  height: 3rem;
+  color: #2563eb; /* blue-600 */
+}
+
+.moduleIcon {
+  width: 100%;
+  height: 100%;
+}
+
+.moduleTitle {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.moduleDescription {
+  font-size: 1rem;
+  color: #6b7280; /* gray-500 */
+  margin: 0.25rem 0 0;
+}
+
+.demoButton {
+  background-color: #2563eb; /* blue-600 */
+  color: white;
+  padding: 0.5rem 1.25rem;
+  border-radius: 0.375rem;
+  font-weight: 600;
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+}
+
+.demoButton:hover {
+  background-color: #1d4ed8; /* blue-700 */
+}
+
+.moduleContent {
+  margin-top: 2rem;
+}
+
+.heroSection {
+  border-radius: 1rem;
+  padding: 2rem;
+  margin-bottom: 3rem;
+  background: linear-gradient(135deg, #3b82f6, #ffffff);
+  color: white;
+}
+
+.heroGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+.roleWrapper {
+  margin-bottom: 1rem;
+}
+
+.roleBadge {
+  padding: 0.25rem 0.75rem;
+  border: 1px solid rgba(255 255 255 / 0.7);
+  border-radius: 9999px;
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: white;
+  background-color: rgba(255 255 255 / 0.1);
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.businessValue {
+  font-size: 1.125rem;
+  margin-bottom: 2rem;
+}
+
+.heroImageWrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.heroImage {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 1rem;
+  object-fit: contain;
+}
+
+.grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.cardContent {
+  padding: 1.5rem;
+}
+
+.cardTitle {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.featureList,
+.benefitList,
+.resultList,
+.integrationList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.featureItem,
+.benefitItem,
+.resultItem,
+.integrationItem {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.featureText,
+.benefitText,
+.resultText,
+.integrationText {
+  font-size: 1rem;
+  color: #374151; /* gray-700 */
+}
+
+.benefitDot,
+.integrationDot {
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: #2563eb; /* blue-600 */
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.resultGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.resultBlock {
+  background-color: #f3f4f6;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.problemTitle,
+.solutionTitle {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+  color: #1f2937; /* gray-800 */
+}
+
+.cardMargin {
+  margin-top: 2rem;
+}
+
+.ctaSection {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.ctaTitle {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.ctaSubtitle {
+  font-size: 1.125rem;
+  margin-bottom: 2rem;
+  color: #4b5563; /* gray-600 */
+}
+
+.ctaButtons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.orderButton {
+  background-color: #2563eb;
+  color: white;
+  padding: 0.75rem 2rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.orderButton:hover {
+  background-color: #1d4ed8;
+}
+
+.otherModulesButton {
+  border: 2px solid #2563eb;
+  color: #2563eb;
+  padding: 0.75rem 2rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  background: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.otherModulesButton:hover {
+  background-color: #2563eb;
+  color: white;
+}

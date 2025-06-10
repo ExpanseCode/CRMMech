@@ -1,0 +1,54 @@
+.badge {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 9999px;
+  border: 1px solid;
+  padding: 0.125rem 0.625rem; /* py-0.5 px-2.5 */
+  font-size: 0.75rem; /* text-xs */
+  font-weight: 600;
+  transition: color 0.2s, background-color 0.2s;
+  cursor: default;
+  user-select: none;
+  outline-offset: 2px;
+}
+
+.badge:focus-visible {
+  outline: 2px solid var(--ring-color); /* Приклад focus */
+  outline-offset: 2px;
+}
+
+.default {
+  border-color: transparent;
+  background-color: var(--primary-bg);
+  color: var(--primary-foreground);
+}
+
+.default:hover {
+  background-color: var(--primary-bg-hover);
+}
+
+.secondary {
+  border-color: transparent;
+  background-color: var(--secondary-bg);
+  color: var(--secondary-foreground);
+}
+
+.secondary:hover {
+  background-color: var(--secondary-bg-hover);
+}
+
+.destructive {
+  border-color: transparent;
+  background-color: var(--destructive-bg);
+  color: var(--destructive-foreground);
+}
+
+.destructive:hover {
+  background-color: var(--destructive-bg-hover);
+}
+
+.outline {
+  border-color: currentColor;
+  background-color: transparent;
+  color: var(--foreground);
+}
