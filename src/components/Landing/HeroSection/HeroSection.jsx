@@ -111,16 +111,14 @@ export default function HeroSection() {
             transition={{ duration: 0.8, delay: 0.6 }}
             className={css.btnsWrapper}
           >
-            <button
-              type="button"
+            <a
+              href="https://forms.gle/oShc79zDeNqAyQ5p8"
+              target="_blank"
               className={css.btnWithRocket}
-              onClick={() =>
-                window.open('https://forms.gle/oShc79zDeNqAyQ5p8', '_blank')
-              }
             >
               <Rocket className={css.icon} />
               🚀 Спробувати
-            </button>
+            </a>
             <button
               type="button"
               className={css.playBtn}
@@ -233,7 +231,7 @@ export default function HeroSection() {
           <div className={css.videoWrapper}>
             <iframe
               width="100%"
-              height="315"
+              height="100%"
               src="https://www.youtube.com/embed/w_XSB5hDMyo?autoplay=1&rel=0"
               title="YouTube video player"
               frameBorder="0"

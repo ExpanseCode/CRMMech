@@ -614,18 +614,21 @@
 .videoWrapper {
   border-radius: 0.5rem;
   background-color: rgb(0 0 0);
-  width: 368px;
+  width: 22rem;
+  height: 12rem;
 }
 
-@media screen and (min-width: 768.98px) {
+@media screen and (min-width: 768px) {
   .videoWrapper {
-    width: 760px;
+    width: 46rem;
+    height: 26rem;
   }
 }
 
-@media screen and (min-width: 1279.98px) {
+@media screen and (min-width: 1280px) {
   .videoWrapper {
     width: 56rem;
+    height: 32rem;
   }
 }
 
