@@ -1,3 +1,4 @@
+
 .footer {
   background-color: var(--text-headers);
   color: var(--white);
@@ -8,15 +9,17 @@
 .container {
   max-width: 72rem;
   margin: 0 auto;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .grid {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 2rem;
 }
+
+
 
 .brandSection {
   display: flex;
@@ -55,6 +58,7 @@
   color: #9ca3af;
   margin-bottom: 1rem;
   max-width: 28rem;
+  line-height: 1.5rem;
 }
 
 .socials {
@@ -127,4 +131,22 @@
 
 .copyright {
   color: #9ca3af;
+}
+
+@media only screen and (min-width: 768px){
+.container {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.grid {
+  grid-template-columns: 2fr 1fr 1fr;
+}
+}
+
+@media only screen and (min-width: 1280px) {
+  .container {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
 }
