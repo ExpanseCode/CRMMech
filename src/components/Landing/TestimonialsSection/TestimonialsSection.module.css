@@ -1,8 +1,25 @@
+.testimonialsSection {
+    display: none;
+}
+
+@media only screen and (min-width: 768px) {
+    .testimonialsSection {
+        display: block;
+    }
+}
+
 .container {
     display: flex;
     flex-direction: column;
-    padding: 0 96px;
-    gap: 64px;
+    padding: 0 1.5rem;
+    gap: 3rem;
+}
+
+@media only screen and (min-width: 1280px) {
+    .container {
+        padding: 0 6rem;
+        gap: 4rem;
+    }
 }
 
 .sectionHeader {
@@ -17,6 +34,7 @@
     line-height: 2.5rem;
     font-weight: 700;
     color: var(--text-headers);
+    text-align: center;
 }
 
 .sectionSubtitle {
@@ -30,8 +48,14 @@
 
 .testimonialsGrid {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(1, minmax(0, 1fr));
     gap: 2rem;
+}
+
+@media only screen and (min-width: 1280px) {
+    .testimonialsGrid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
 }
 
 .testimonialCard {
@@ -40,16 +64,21 @@
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.15),
         0 4px 6px -4px rgba(0, 0, 0, 0.12);
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 
 .testimonialHeader {
     display: flex;
     align-items: center;
-    height: 113px;
     gap: 1rem;
-    padding: 1.5rem;
+    padding: 1rem;
     border-bottom: 1px solid var(--card-border);
+}
+
+@media only screen and (min-width: 1280px) {
+    .testimonialHeader {
+        height: 113px;
+        padding: 1.5rem;
+    }
 }
 
 .avatar {
@@ -85,8 +114,14 @@
 }
 
 .beforeSection {
-    padding: 1.5rem;
+    padding: 1rem;
     background-color: var(--red-background);
+}
+
+@media only screen and (min-width: 1280px) {
+    .beforeSection {
+        padding: 1.5rem;
+    }
 }
 
 .beforeHeader {
@@ -97,8 +132,15 @@
 }
 
 .beforeIcon {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
+    font-size: 1rem;
+    line-height: 1.25rem;
+}
+
+@media only screen and (min-width: 1280px) {
+    .beforeIcon {
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+    }
 }
 
 .beforeTitle {
@@ -109,9 +151,9 @@
 }
 
 .beforeText {
-    font-size: 1rem;
+    font-size: 0.75rem;
     font-style: italic;
-    line-height: 1.625rem;
+    line-height: 1.25rem;
     color: var(--red-text);
 
     display: -webkit-box;
@@ -121,9 +163,22 @@
     text-overflow: ellipsis;
 }
 
+@media only screen and (min-width: 1280px) {
+    .beforeText {
+        font-size: 1rem;
+        line-height: 1.625rem;
+    }
+}
+
 .afterSection {
-    padding: 1.5rem;
+    padding: 1rem;
     background-color: var(--light-green-background);
+}
+
+@media only screen and (min-width: 1280px) {
+    .afterSection {
+        padding: 1.5rem;
+    }
 }
 
 .afterHeader {
@@ -134,8 +189,15 @@
 }
 
 .afterIcon {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
+    font-size: 1rem;
+    line-height: 1.25rem;
+}
+
+@media only screen and (min-width: 1280px) {
+    .afterIcon {
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+    }
 }
 
 .afterTitle {
@@ -146,8 +208,8 @@
 }
 
 .afterText {
-    font-size: 1rem;
-    line-height: 1.625rem;
+    font-size: 0.75rem;
+    line-height: 1.25rem;
     color: var(--dark-green-text);
 
     display: -webkit-box;
@@ -157,11 +219,24 @@
     text-overflow: ellipsis;
 }
 
+@media only screen and (min-width: 1280px) {
+    .afterText {
+        font-size: 1rem;
+        line-height: 1.625rem;
+    }
+}
+
 .ratingSection {
     display: flex;
     justify-content: center;
-    padding: 1.5rem;
+    padding: 1rem;
     color: var(--yellow)
+}
+
+@media only screen and (min-width: 1280px) {
+    .ratingSection {
+        padding: 1.5rem;
+    }
 }
 
 .ratingIcon {
@@ -173,19 +248,26 @@
 .benefitsSummary {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 1rem;
     align-items: center;
-    padding: 2rem;
+    padding: 1.5rem;
     border-radius: 1.5rem;
     background: linear-gradient(to right, #2563eb, #9333ea);
     color: var(--white);
+}
+
+@media only screen and (min-width: 1280px) {
+    .benefitsSummary {
+        gap: 1.5rem;
+        padding: 2rem;
+    }
 }
 
 .benefitsTitle {
     font-size: 1.5rem;
     line-height: 2rem;
     font-weight: 700;
-
+    text-align: center;
 }
 
 .benefitsGrid {
@@ -211,9 +293,19 @@
 }
 
 .benefitTitle {
-    font-size: 1.125rem;
-    line-height: 1.75rem;
+    font-size: 1rem;
+    line-height: 1.25rem;
     font-weight: 600;
+    text-align: center;
+}
+
+@media only screen and (min-width: 1280px) {
+    .benefitTitle {
+        font-size: 1.125rem;
+        line-height: 1.75rem;
+        font-weight: 600;
+        text-align: center;
+    }
 }
 
 .benefitText {

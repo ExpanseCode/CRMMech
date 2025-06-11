@@ -34,7 +34,7 @@ const testimonials = [
 
 export default function TestimonialsSection() {
   return (
-    <section id="feedback">
+    <section id="feedback" className={css.testimonialsSection}>
       <div className={css.container}>
         <motion.div
           initial={{ opacity: 0, y: 30 }}
