@@ -1,8 +1,8 @@
 import monitoring1x from '../../../assets/images/TabScreen1x.webp';
-import monitoring2x from '../../../assets/images/TabScreen2x.webp';
 import plannerImage from '../../../assets/planner.png';
 import inWorkImage from '../../../assets/analytics.png';
 import accountingImage from '../../../assets/accountingImage.png';
+import support from '../../../assets/support.png';
 import {
   Monitor,
   Calendar,
@@ -17,8 +17,7 @@ export const modules = [
     id: 'monitoring',
     title: 'Моніторинг',
     icon: Monitor,
-    image1x: monitoring1x,
-    image2x: monitoring2x,
+    image: monitoring1x,
     description:
       'Центр управління реальним часом для власника та керівника СТО',
     subtitle: 'Відеоаналітика + контроль + дії персоналу в одному екрані',
@@ -152,7 +151,7 @@ export const modules = [
     id: 'support',
     title: 'Технічна підтримка',
     icon: HelpCircle,
-    image: accountingImage,
+    image: support,
     description: "Швидкий зв'язок із підтримкою прямо з інтерфейсу",
     subtitle: 'Без дзвінків, месенджерів чи пошуку email',
     targetRole: 'Для всіх користувачів системи',

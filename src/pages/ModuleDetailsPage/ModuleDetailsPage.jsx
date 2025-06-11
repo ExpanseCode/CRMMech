@@ -30,10 +30,10 @@ export default function ModuleDetailsPage() {
         <div className={styles.headerInner}>
           <div className={styles.headerContent}>
             <div className={styles.backWrapper}>
-              <Link href="/modules">
-                <Button variant="ghost" size="sm" className={styles.backButton}>
+              <Link href="/modules" className={styles.backWrapper}>
+                <Button variant="ghost" size="sm" className={styles.backButton} >
                   <ArrowLeft className={styles.backIcon} />
-                  <span>Назад до модулів</span>
+                  <span className={styles.text}>Назад до модулів</span>
                 </Button>
               </Link>
               <div className={styles.iconAndTitle}>
@@ -54,7 +54,7 @@ export default function ModuleDetailsPage() {
               }
               className={styles.demoButton}
             >
-              Замовити демо
+              Замовити
             </Button>
           </div>
         </div>

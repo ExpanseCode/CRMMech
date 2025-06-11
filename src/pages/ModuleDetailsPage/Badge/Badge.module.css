@@ -19,8 +19,8 @@
 
 .default {
   border-color: transparent;
-  background-color: var(--primary-bg);
-  color: var(--primary-foreground);
+  /* background-color: var(--primary-bg); */
+  background-color: #2463EB;
 }
 
 .default:hover {

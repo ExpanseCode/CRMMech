@@ -1,22 +1,16 @@
-/* Button.module.css */
-
 .button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 0.5rem; /* 2 */
-  white-space: nowrap;
-  border-radius: 0.375rem; /* rounded-md */
-  font-size: 0.875rem; /* text-sm */
-  font-weight: 500; /* font-medium */
+  gap: 0.5rem;
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 500; /*має бути 500 але не застосовується */
   transition: color 0.2s ease, background-color 0.2s ease;
-  outline-offset: 2px; /* для фокуса */
-  pointer-events: auto;
-}
-
-.button:focus-visible {
-  outline: 2px solid var(--ring-color, #3b82f6); /* замінити кольором кольорової схеми */
-  outline-offset: 2px;
+  cursor: pointer;
+  outline: none;
+  border: none;
 }
 
 .button:disabled {
@@ -24,27 +18,26 @@
   opacity: 0.5;
 }
 
-/* svg inside button */
 .button svg {
   pointer-events: none;
-  width: 1rem; /* size-4 */
+  width: 1rem;
   height: 1rem;
   flex-shrink: 0;
 }
 
 /* Варіанти кольорів */
 .default {
-  background-color: var(--primary, #3b82f6);
-  color: var(--primary-foreground, #fff);
+  background-color: #2463EB;
+  color: var(--white);
 }
 
 .default:hover:not(:disabled) {
-  background-color: var(--primary-hover, #2563eb);
+  background-color: #3670ED;
 }
 
 .destructive {
   background-color: var(--destructive, #ef4444);
-  color: var(--destructive-foreground, #fff);
+  color: var(--white);
 }
 
 .destructive:hover:not(:disabled) {
@@ -53,32 +46,32 @@
 
 .outline {
   border: 1px solid var(--input, #d1d5db);
-  background-color: var(--background, #fff);
-  color: var(--text, #111827);
+  background-color: transparent;
+  color: var(--text-headers);
 }
 
 .outline:hover:not(:disabled) {
   background-color: var(--accent, #f3f4f6);
-  color: var(--accent-foreground, #111827);
+  color: var(--text-headers);
 }
 
 .secondary {
-  background-color: var(--secondary, #6b7280);
-  color: var(--secondary-foreground, #f9fafb);
+  background-color: #F1F5F9;
+  color: #0F1729;
 }
 
 .secondary:hover:not(:disabled) {
-  background-color: var(--secondary-hover, #4b5563);
+  background-color: #dcfce7;
 }
 
 .ghost {
   background-color: transparent;
-  color: var(--text, #111827);
+  color: var(--text-headers);
 }
 
 .ghost:hover:not(:disabled) {
   background-color: var(--accent, #f3f4f6);
-  color: var(--accent-foreground, #111827);
+  color: var(--text-headers);
 }
 
 .link {
@@ -93,7 +86,7 @@
 
 /* Розміри */
 .sizeDefault {
-  height: 2.5rem; /* 10 */
+  height: 2.5rem;
   padding-left: 1rem;
   padding-right: 1rem;
   padding-top: 0.5rem;
@@ -101,21 +94,21 @@
 }
 
 .sizeSm {
-  height: 2.25rem; /* 9 */
+  height: 2.25rem;
   border-radius: 0.375rem;
   padding-left: 0.75rem;
   padding-right: 0.75rem;
 }
 
 .sizeLg {
-  height: 2.75rem; /* 11 */
+  height: 2.75rem;
   border-radius: 0.375rem;
   padding-left: 2rem;
   padding-right: 2rem;
 }
 
 .sizeIcon {
-  height: 2.5rem; /* 10 */
+  height: 2.5rem;
   width: 2.5rem;
   padding: 0;
 }
