@@ -1,15 +1,29 @@
 .section {
-  background: linear-gradient(to bottom, #eff6ff, var(--white));
+  /* background: linear-gradient(to bottom, #eff6ff, var(--white)); */
 }
 
 .sectionWrapper {
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+@media only screen and (min-width: 1280px) {
+  .sectionWrapper {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
 }
 
 .headerWrapper {
   text-align: center;
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
+}
+
+@media only screen and (min-width: 1280px) {
+  .headerWrapper {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
 }
 
 .header {
@@ -39,18 +53,20 @@
 .cardsWrapper {
   display: grid;
   gap: 1.5rem;
-  margin-bottom: 3rem;
+  margin-bottom: 1.5rem;
 }
 
 @media screen and (min-width: 767.98px) {
   .cardsWrapper {
     grid-template-columns: repeat(2, minmax(0px, 1fr));
+    margin-bottom: 2rem;
   }
 }
 
 @media screen and (min-width: 1279.98px) {
   .cardsWrapper {
     grid-template-columns: repeat(4, minmax(0, 1fr));
+    margin-bottom: 3rem;
   }
 }
 
@@ -261,13 +277,27 @@
 .tariffsCompoundWrapper {
   box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1),
     0 8px 10px -6px rgb(0 0 0 / 0.1);
-  padding: 2rem;
+  padding: 1rem;
   background-color: var(--white);
   border-radius: 1.5rem;
   max-width: 64rem;
-  margin-bottom: 3rem;
+  margin-bottom: 1.5rem;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .tariffsCompoundWrapper {
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .tariffsCompoundWrapper {
+    padding: 2rem;
+    margin-bottom: 3rem;
+  }
 }
 
 .tariffsCompoundHeader {
@@ -296,14 +326,28 @@
 }
 
 .whyPostsSection {
-  padding: 2rem;
+  padding: 1rem;
   background: linear-gradient(to right, #eff6ff, #faf5ff);
   border: 2px solid var(--border-blue);
   border-radius: 1.5rem;
   max-width: 56rem;
-  margin-bottom: 3rem;
+  margin-bottom: 1.5rem;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .whyPostsSection {
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .whyPostsSection {
+    padding: 2rem;
+    margin-bottom: 3rem;
+  }
 }
 
 .whyPostsTextWrapper {
@@ -330,14 +374,28 @@
 }
 
 .noHiddenFeesSection {
-  padding: 2rem;
+  padding: 1rem;
   background: linear-gradient(to right, #f0fdf4, #eff6ff);
   border: 2px solid var(--light-green-border);
   border-radius: 1.5rem;
   max-width: 56rem;
-  margin-bottom: 3rem;
+  margin-bottom: 1.5rem;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .noHiddenFeesSection {
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .noHiddenFeesSection {
+    padding: 2rem;
+    margin-bottom: 3rem;
+  }
 }
 
 .noHiddenFeesSectionTextWrapper {
@@ -377,12 +435,24 @@
 .readyToStartSection {
   color: var(--white);
   text-align: center;
-  padding: 2rem;
+  padding: 1rem;
   background: linear-gradient(to right, #22c55e, #2563eb);
   border-radius: 1.5rem;
   max-width: 56rem;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .readyToStartSection {
+    padding: 1.5rem;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .readyToStartSection {
+    padding: 2rem;
+  }
 }
 
 .readyToStartSectionHeader {
