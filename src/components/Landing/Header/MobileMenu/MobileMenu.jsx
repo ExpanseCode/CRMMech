@@ -22,31 +22,31 @@ export default function MobileMenu({ scrollToSection }) {
       icon: <Monitor className={css.icon} />,
       name: 'Моніторинг',
       text: 'Центр управління реальним часом',
-      path: '/modules/:monitoring',
+      path: '/modules/monitoring',
     },
     {
       icon: <Calendar className={css.icon} />,
       name: 'Планувальник',
       text: 'Календарна сітка та планування',
-      path: '/modules/:planner',
+      path: '/modules/planner',
     },
     {
       icon: <Settings className={css.icon} />,
       name: 'В роботі',
       text: 'Панель керівника',
-      path: '/modules/:inwork',
+      path: '/modules/inwork',
     },
     {
       icon: <Package className={css.icon} />,
       name: 'Облік',
       text: 'Аналітика запчастин та продажів',
-      path: '/modules/:accounting',
+      path: '/modules/accounting',
     },
     {
       icon: <HelpCircle className={css.icon} />,
       name: 'Технічна підтримка',
       text: 'Підтримка з системи',
-      path: '/modules/:support',
+      path: '/modules/support',
     },
   ];
 

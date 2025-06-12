@@ -222,7 +222,7 @@ export default function ListOfModules(params) {
                 type="button"
                 className={css.btnMore}
                 onClick={() => {
-                  navigate(`/modules/:${item.id}`);
+                  navigate(`/modules/${item.id}`);
                 }}
               >
                 Детальніше
