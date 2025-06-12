@@ -3,15 +3,30 @@
 .container {
     display: flex;
     flex-direction: column;
-    padding: 0 32px;
-    gap: 64px;
+    padding: 0 1rem;
+    gap: 2rem;
+}
+
+@media only screen and (min-width: 768px) {
+    .container {
+        padding: 0 1.5rem;
+        gap: 3rem;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .container {
+        padding: 0 2rem;
+        gap: 4rem;
+    }
 }
 
 .sectionHeader {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 16px;
+    gap: 1rem;
+    text-align: center;
 }
 
 .headerBtn {
@@ -48,15 +63,26 @@
 
 .featuresGrid {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0px, 1fr));
-    gap: 32px;
+    gap: 2rem;
     align-items: center;
+}
+
+@media only screen and (min-width: 1280px) {
+    .featuresGrid {
+        grid-template-columns: repeat(2, minmax(0px, 1fr));
+    }
 }
 
 .featureItem {
     display: flex;
     align-items: center;
-    gap: 32px;
+    gap: 0.75rem;
+}
+
+@media only screen and (min-width: 768px) {
+    .featureItem {
+        gap: 2rem;
+    }
 }
 
 .featureReverse {
@@ -80,11 +106,18 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 48px;
-    height: 48px;
+    width: 2rem;
+    height: 2rem;
     background-color: var(--primary);
     flex-shrink: 0;
     border-radius: 8px;
+}
+
+@media only screen and (min-width: 768px) {
+    .featureIconWrapper {
+        width: 3rem;
+        height: 3rem;
+    }
 }
 
 .featureIcon {
@@ -94,26 +127,48 @@
 }
 
 .featureTitle {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
+    font-size: 1rem;
+    line-height: 1.25rem;
     font-weight: 700;
     color: var(--text-headers);
 }
 
+@media only screen and (min-width: 768px) {
+    .featureTitle {
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+    }
+}
+
 .featureDescription {
-    font-size: 1rem;
-    line-height: 1.5rem;
+    font-size: 0.75rem;
+    line-height: 1rem;
     font-weight: 400;
     color: var(--text-gray);
+}
+
+@media only screen and (min-width: 768px) {
+    .featureDescription {
+        font-size: 1rem;
+        line-height: 1.5rem;
+        font-weight: 400;
+        color: var(--text-gray);
+    }
 }
 
 .featureStats {
     display: flex;
     align-items: center;
-    padding: 16px;
+    padding: 0.5rem;
     border-radius: 8px;
     border: 1px solid var(--light-green-border);
     background-color: var(--light-green-background);
+}
+
+@media only screen and (min-width: 768px) {
+    .featureStats {
+        padding: 1rem;
+    }
 }
 
 .featureStatsText {
@@ -121,6 +176,7 @@
     line-height: 1.25rem;
     font-weight: 600;
     color: var(--dark-green-text);
+    text-align: center;
 }
 
 .featureTags {
@@ -131,11 +187,18 @@
 .featureTags>span {
     display: flex;
     align-items: center;
-    padding: 4px 12px;
+    padding: 4px 4px;
     font-size: 0.75rem;
     line-height: 1rem;
     font-weight: 500;
     border-radius: 8px;
+    text-align: center;
+}
+
+@media only screen and (min-width: minwidthpx) {
+    .featureTags>span {
+        padding: 4px 12px;
+    }
 }
 
 .featureFirstTag {
@@ -155,12 +218,19 @@
 
 .imageContainer {
     position: relative;
-    width: 256px;
-    height: 550px;
+    width: 171px;
+    height: 367px;
     overflow: hidden;
     border-radius: 16px;
     border: 4px solid var(--border-dark-gray);
     box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+@media only screen and (min-width: 1280px) {
+    .imageContainer {
+        width: 256px;
+        height: 550px;
+    }
 }
 
 .featureImage {
@@ -171,30 +241,57 @@
 
 .mobileAppCTA {
     text-align: center;
-    padding: 2rem;
+    padding: 1rem;
     border-radius: 1rem;
     background: linear-gradient(to right, #dc2626, #ea580c);
     color: white;
 }
 
+@media only screen and (min-width: 1280px) {
+    .mobileAppCTA {
+        padding: 2rem;
+    }
+}
+
 .CTATitle {
-    font-size: 1.5rem;
-    line-height: 2rem;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
     font-weight: 700;
     margin-bottom: 1rem;
 }
 
+@media only screen and (min-width: 1280px) {
+    .CTATitle {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        margin-bottom: 1.5rem;
+    }
+}
+
 .CTASubtitle {
     max-width: 672px;
-    margin: 0 auto 1.5rem;
+    margin: 0 auto 1rem;
     color: var(--orange-background)
 }
 
+@media only screen and (min-width: 1280px) {
+    .CTASubtitle {
+        margin: 0 auto 1.5rem;
+    }
+}
+
 .accessInstructions {
-    padding: 1.5rem;
+    padding: 1rem;
     border-radius: 0.75rem;
     background-color: rgba(255, 255, 255, 0.1);
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+@media only screen and (min-width: 1280px) {
+    .accessInstructions {
+        padding: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
 }
 
 .instructionsTitle {
@@ -213,9 +310,15 @@
 }
 
 .appUnavailable {
-    padding: 1.5rem;
+    padding: 1rem;
     border-radius: 0.75rem;
     background-color: rgba(255, 255, 255, 0.1);
+}
+
+@media only screen and (min-width: 1280px) {
+    .appUnavailable {
+        padding: 1.5rem;
+    }
 }
 
 .appUnavailableText {
