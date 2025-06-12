@@ -1,0 +1,118 @@
+.whatYouGetWrapper {
+  width: 100%;
+  padding: 2rem;
+  border-radius: 1rem;
+  margin-top: 2rem;
+  background: linear-gradient(to right, #16a34a, #2563eb);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .whatYouGetWrapper {
+  padding: 3rem;
+  }
+}
+
+.title {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: var(--white);
+  text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .title {
+    text-align: left;
+  }
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .list {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1.5rem;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+}
+
+.listItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stats {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: 0.5rem;
+}
+
+.benefit {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  color: var(--white);
+}
+
+.description {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: var(--white);
+
+  text-align: center;
+  height: 40px;
+}
+
+.bottomBox {
+  padding: 1.5rem;
+  background-color: #fff3;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* margin-bottom: 2rem; */
+}
+
+.bottomTitle {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: var(--white);
+  text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .bottomTitle {
+    text-align: left;
+  }
+}
+
+.text {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  color: var(--white);
+  text-align: center;
+}

@@ -122,17 +122,6 @@ export default function PricingSection() {
                 <p className={css.cardThirdText}>{plan.description}</p>
                 <p className={css.italicText}>{plan.benefit}</p>
               </div>
-              {/* <button
-                type="button"
-                className={`${css[plan.buttonColor]} ${css.cardBtn}`}
-                onClick={() =>
-                  window.open('https://forms.gle/oShc79zDeNqAyQ5p8', '_blank')
-                }
-              >
-                {plan.name === 'Profi'
-                  ? '📞 Отримати індивідуальну пропозицію'
-                  : '⚡ Замовити'}
-              </button> */}
               <a
                 className={`${css[plan.buttonColor]} ${css.cardBtn}`}
                 href="https://forms.gle/oShc79zDeNqAyQ5p8"
