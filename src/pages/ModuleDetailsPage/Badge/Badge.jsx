@@ -1,9 +1,6 @@
 import styles from "./Badge.module.css";
 
 const variantClass = {
-  default: styles.default,
-  secondary: styles.secondary,
-  destructive: styles.destructive,
   outline: styles.outline,
 };
 

@@ -44,6 +44,7 @@ export default function ModuleDetailsPage() {
                 <Button variant="ghost" size="sm" className={styles.backButton}>
                   <ArrowLeft className={styles.backIcon} />
                   <span className={styles.text}>Назад до модулів</span>
+                  <span className={styles.textTablet}>Назад</span>
                 </Button>
               </button>
               <div className={styles.iconAndTitle}>
