@@ -28,7 +28,7 @@ export default function OtherFunctions(params) {
     },
   ];
   return (
-    <div className={css.wrapper}>
+    <div className={css.otherFunctionsWrapper}>
       <p className={css.mainTitle}>🔗 Інші функції системи</p>
       <ul className={css.list}>
         {functions.map((Item, index) => (

@@ -2,7 +2,7 @@ import css from './Footer.module.css';
 
 export default function Footer() {
   return (
-    <div className={css.wrapper}>
+    <div className={css.footerWrapper}>
       <p className={css.title}>Готові спробувати CRMmech?</p>
       <p className={css.descr}>
         Всі модулі працюють разом як єдина система. Замовте демо та подивіться,

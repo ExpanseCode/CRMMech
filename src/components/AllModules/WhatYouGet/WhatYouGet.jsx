@@ -25,7 +25,7 @@ export default function WhatYouGet(params) {
   ];
 
   return (
-    <div className={css.wrapper}>
+    <div className={css.whatYouGetWrapper}>
       <p className={css.title}>🎯 Що ви отримуєте з CRMmech</p>
       <ul className={css.list}>
         {options.map((option, index) => (
