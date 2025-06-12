@@ -1,3 +1,4 @@
+import { useNavigate } from 'react-router-dom';
 import css from './Popup.module.css';
 import {
   Menu,
@@ -36,13 +37,21 @@ export default function Popup({}) {
       text: 'Підтримка з системи',
     },
   ];
+
+  const navigate = useNavigate();
+
   return (
     <div className={css.wrapperPopup}>
       <div className={css.firstPoint}>
         <div className={css.iconBox}>
           <Menu className={css.icon} />
         </div>
-        <div className={css.textWrapper}>
+        <div
+          className={css.textWrapper}
+          onClick={() => {
+            navigate('/modules');
+          }}
+        >
           <p className={css.pageName}>Всі модулі</p>
           <p className={css.pageText}>Огляд усіх модулів CRMmech</p>
         </div>
