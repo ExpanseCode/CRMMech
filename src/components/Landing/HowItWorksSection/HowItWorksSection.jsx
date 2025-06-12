@@ -112,7 +112,10 @@ export default function HowItWorksSection() {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
               viewport={{ once: true }}
-              className={clsx(css.firstSection, index % 2 === 1 && css.reverse)}
+              className={clsx(
+                css.firstSection,
+                index % 2 === 1 ? css.reverse : css.flexDirection
+              )}
             >
               <div className={css.firstSectionWrapper}>
                 <div className={css.firstSectionLeftTopTextWrapper}>
@@ -154,6 +157,9 @@ export default function HowItWorksSection() {
                   )}
                 </motion.div>
               </div>
+              {index !== automationSteps.length - 1 && (
+                <ArrowRight className={css.arrow} />
+              )}
             </motion.div>
           ))}
         </div>
@@ -187,7 +193,9 @@ export default function HowItWorksSection() {
             </div>
             <div className={css.bottomSectionCard}>
               <Users className={css.clock} />
-              <h4 className={css.bottomSectionCardTopText}>Мотивація команди</h4>
+              <h4 className={css.bottomSectionCardTopText}>
+                Мотивація команди
+              </h4>
               <p className={css.bottomSectionCardBottomText}>
                 Справедлива зарплата за результат
               </p>

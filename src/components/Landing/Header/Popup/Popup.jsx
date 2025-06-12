@@ -1,3 +1,4 @@
+import { useNavigate } from 'react-router-dom';
 import css from './Popup.module.css';
 import {
   Menu,
@@ -14,31 +15,44 @@ export default function Popup({}) {
       icon: <Monitor className={css.icon} />,
       name: 'Моніторинг',
       text: 'Центр управління реальним часом',
+      path: '/modules/monitoring',
     },
     {
       icon: <Calendar className={css.icon} />,
       name: 'Планувальник',
       text: 'Календарна сітка та планування',
+      path: '/modules/planner',
     },
     {
       icon: <Settings className={css.icon} />,
       name: 'В роботі',
       text: 'Панель керівника',
+      path: '/modules/inwork',
     },
     {
       icon: <Package className={css.icon} />,
       name: 'Облік',
       text: 'Аналітика запчастин та продажів',
+      path: '/modules/accounting',
     },
     {
       icon: <HelpCircle className={css.icon} />,
       name: 'Технічна підтримка',
       text: 'Підтримка з системи',
+      path: '/modules/support',
     },
   ];
+
+  const navigate = useNavigate();
+
   return (
     <div className={css.wrapperPopup}>
-      <div className={css.firstPoint}>
+      <div
+        className={css.firstPoint}
+        onClick={() => {
+          navigate('/modules');
+        }}
+      >
         <div className={css.iconBox}>
           <Menu className={css.icon} />
         </div>
@@ -49,7 +63,13 @@ export default function Popup({}) {
       </div>
       <ul className={css.list}>
         {pages?.map((page, index) => (
-          <li key={index} className={css.listItem}>
+          <li
+            key={index}
+            className={css.listItem}
+            onClick={() => {
+              navigate(page.path);
+            }}
+          >
             <div className={css.iconBox}>{page.icon}</div>
             <div className={css.textWrapper}>
               <p className={css.pageName}> {page.name}</p>

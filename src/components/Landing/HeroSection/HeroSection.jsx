@@ -11,15 +11,27 @@ import {
   TrendingUp,
   Download,
 } from 'lucide-react';
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import tabScreen from '../../../assets/images/TabScreen1x.webp';
 import tabScreen2x from '../../../assets/images/TabScreen2x.webp';
 import addCarScreenPhoto from '../../../assets/images/addCarScreenPhoto.webp';
+import Modal from './Modal/Modal';
 
 export default function HeroSection() {
   const [garageCount, setGarageCount] = useState(0);
   const [profitIncrease, setProfitIncrease] = useState(0);
   const [timesSaved, setTimesSaved] = useState(0);
+  const [openVideo, setOpenVideo] = useState(false);
+  const videoRef = useRef(null);
+
+  useEffect(() => {
+    if (openVideo && videoRef.current) {
+      videoRef.current.play();
+    } else if (!openVideo && videoRef.current) {
+      videoRef.current.pause();
+      videoRef.current.currentTime = 0;
+    }
+  }, [openVideo]);
 
   // Animated counters effect
   useEffect(() => {
@@ -99,11 +111,19 @@ export default function HeroSection() {
             transition={{ duration: 0.8, delay: 0.6 }}
             className={css.btnsWrapper}
           >
-            <button type="button" className={css.btnWithRocket}>
+            <a
+              href="https://forms.gle/oShc79zDeNqAyQ5p8"
+              target="_blank"
+              className={css.btnWithRocket}
+            >
               <Rocket className={css.icon} />
               🚀 Спробувати
-            </button>
-            <button type="button" className={css.playBtn}>
+            </a>
+            <button
+              type="button"
+              className={css.playBtn}
+              onClick={() => setOpenVideo(true)}
+            >
               <Play className={css.icon} />
               🎥 Демо
             </button>
@@ -206,6 +226,21 @@ export default function HeroSection() {
       >
         <ChevronDown className={css.arrow} />
       </motion.div>
+      {openVideo && (
+        <Modal isOpen={openVideo} onClose={() => setOpenVideo(false)}>
+          <div className={css.videoWrapper}>
+            <iframe
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/w_XSB5hDMyo?autoplay=1&rel=0"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="autoplay; encrypted-media"
+              allowFullScreen
+            ></iframe>
+          </div>
+        </Modal>
+      )}
     </div>
   );
 }
