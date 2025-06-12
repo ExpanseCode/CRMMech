@@ -1,4 +1,4 @@
-import monitoring1x from '../../../assets/images/TabScreen1x.webp';
+import monitoring1x from '../../../assets/images/TabScreen1x.png';
 import plannerImage from '../../../assets/planner.png';
 import inWorkImage from '../../../assets/analytics.png';
 import accountingImage from '../../../assets/accountingImage.png';

@@ -1,23 +1,28 @@
-import { Card, CardContent} from './Card/Card.jsx';
-import  Badge  from './Badge/Badge.jsx';
-import  Button  from './Button/Button.jsx';
+import { Card, CardContent } from './Card/Card.jsx';
+import Badge from './Badge/Badge.jsx';
+import Button from './Button/Button.jsx';
 import { ArrowLeft } from 'lucide-react';
 import styles from './ModuleDetailsPage.module.css';
-import {modules} from './Modules/Modules.jsx';
-import { Link, useParams } from 'react-router-dom';
+import { modules } from './Modules/Modules.jsx';
+import { Link, useNavigate, useParams } from 'react-router-dom';
 
 export default function ModuleDetailsPage() {
   const { id: moduleId } = useParams();
   const module = modules.find(m => m.id === moduleId);
+  const navigate = useNavigate();
 
   if (!module) {
     return (
       <div className={styles.notFound}>
         <div className={styles.notFoundText}>
           <h1 className={styles.notFoundTitle}>Модуль не знайдено</h1>
-          <Link href="/modules">
+          <button
+            onClick={() => {
+              navigate('/modules');
+            }}
+          >
             <Button>Повернутися до списку модулів</Button>
-          </Link>
+          </button>
         </div>
       </div>
     );
@@ -30,12 +35,17 @@ export default function ModuleDetailsPage() {
         <div className={styles.headerInner}>
           <div className={styles.headerContent}>
             <div className={styles.backWrapper}>
-              <Link href="/modules" className={styles.backWrapper}>
-                <Button variant="ghost" size="sm" className={styles.backButton} >
+              <button
+                onClick={() => {
+                  navigate('/modules');
+                }}
+                className={styles.backWrapper}
+              >
+                <Button variant="ghost" size="sm" className={styles.backButton}>
                   <ArrowLeft className={styles.backIcon} />
                   <span className={styles.text}>Назад до модулів</span>
                 </Button>
-              </Link>
+              </button>
               <div className={styles.iconAndTitle}>
                 <div className={styles.iconWrapper}>
                   <module.icon className={styles.moduleIcon} />
