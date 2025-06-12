@@ -1,3 +1,4 @@
+import { useNavigate } from 'react-router-dom';
 import css from './ListOfModules.module.css';
 import {
   ArrowLeft,
@@ -177,6 +178,9 @@ export default function ListOfModules(params) {
       borderClass: 'border-gray-200',
     },
   ];
+
+  const navigate = useNavigate();
+
   return (
     <div>
       <ul className={css.list}>
@@ -214,7 +218,15 @@ export default function ListOfModules(params) {
                 )}
               </div>
 
-              <button className={css.btnMore}>Детальніше</button>
+              <button
+                type="button"
+                className={css.btnMore}
+                onClick={() => {
+                  navigate(`/modules/:${item.id}`);
+                }}
+              >
+                Детальніше
+              </button>
             </div>
           </li>
         ))}

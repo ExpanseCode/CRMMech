@@ -8,35 +8,49 @@ import {
 } from 'lucide-react';
 import css from './MobileMenu.module.css';
 import { motion } from 'framer-motion';
+import { path } from 'framer-motion/client';
+import { useNavigate } from 'react-router-dom';
 
 export default function MobileMenu({ scrollToSection }) {
   const pages = [
     {
+      icon: <Menu className={css.icon} />,
+      name: ' Всі модулі',
+      path: '/modules',
+    },
+    {
       icon: <Monitor className={css.icon} />,
       name: 'Моніторинг',
       text: 'Центр управління реальним часом',
+      path: '/modules/:monitoring',
     },
     {
       icon: <Calendar className={css.icon} />,
       name: 'Планувальник',
       text: 'Календарна сітка та планування',
+      path: '/modules/:planner',
     },
     {
       icon: <Settings className={css.icon} />,
       name: 'В роботі',
       text: 'Панель керівника',
+      path: '/modules/:inwork',
     },
     {
       icon: <Package className={css.icon} />,
       name: 'Облік',
       text: 'Аналітика запчастин та продажів',
+      path: '/modules/:accounting',
     },
     {
       icon: <HelpCircle className={css.icon} />,
       name: 'Технічна підтримка',
       text: 'Підтримка з системи',
+      path: '/modules/:support',
     },
   ];
+
+  const navigate = useNavigate();
 
   return (
     <motion.div
@@ -68,7 +82,11 @@ export default function MobileMenu({ scrollToSection }) {
 
             <ul className={css.pagesList}>
               {pages.map((page, index) => (
-                <li key={index} className={css.modulesItem}>
+                <li
+                  key={index}
+                  className={css.modulesItem}
+                  onClick={() => navigate(page.path)}
+                >
                   <div className={css.iconBox}>{page.icon}</div>
                   <p className={css.pageName}> {page.name}</p>
                 </li>
