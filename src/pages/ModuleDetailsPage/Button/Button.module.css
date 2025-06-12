@@ -31,27 +31,18 @@
   color: var(--white);
 }
 
-.default:hover:not(:disabled) {
+.default:hover{
   background-color: #3670ED;
 }
 
-.destructive {
-  background-color: var(--destructive, #ef4444);
-  color: var(--white);
-}
-
-.destructive:hover:not(:disabled) {
-  background-color: var(--destructive-hover, #dc2626);
-}
-
 .outline {
-  border: 1px solid var(--input, #d1d5db);
+  border: 1px solid #d1d5db;
   background-color: transparent;
   color: var(--text-headers);
 }
 
-.outline:hover:not(:disabled) {
-  background-color: var(--accent, #f3f4f6);
+.outline:hover{
+  background-color: #f3f4f6;
   color: var(--text-headers);
 }
 
@@ -60,7 +51,7 @@
   color: #0F1729;
 }
 
-.secondary:hover:not(:disabled) {
+.secondary:hover {
   background-color: #dcfce7;
 }
 
@@ -69,19 +60,9 @@
   color: var(--text-headers);
 }
 
-.ghost:hover:not(:disabled) {
-  background-color: var(--accent, #f3f4f6);
+.ghost:hover {
+  background-color: #f3f4f6;
   color: var(--text-headers);
-}
-
-.link {
-  color: var(--primary, #3b82f6);
-  text-decoration-line: underline;
-  text-underline-offset: 4px;
-}
-
-.link:hover:not(:disabled) {
-  text-decoration-line: underline;
 }
 
 /* Розміри */

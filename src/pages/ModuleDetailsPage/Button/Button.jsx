@@ -4,11 +4,10 @@ import styles from "./Button.module.css";
 
 const variantClass = {
   default: styles.default,
-  destructive: styles.destructive,
   outline: styles.outline,
   secondary: styles.secondary,
   ghost: styles.ghost,
-  link: styles.link,
+ 
 };
 
 const sizeClass = {

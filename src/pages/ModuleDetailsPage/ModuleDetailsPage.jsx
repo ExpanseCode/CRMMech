@@ -35,17 +35,13 @@ export default function ModuleDetailsPage() {
         <div className={styles.headerInner}>
           <div className={styles.headerContent}>
             <div className={styles.backWrapper}>
-              <button
-                onClick={() => {
-                  navigate('/modules');
-                }}
-                className={styles.backWrapper}
-              >
+              <a href="/modules" className={styles.backWrapper}>
                 <Button variant="ghost" size="sm" className={styles.backButton}>
                   <ArrowLeft className={styles.backIcon} />
                   <span className={styles.text}>Назад до модулів</span>
+                  <span className={styles.textTablet}>Назад</span>
                 </Button>
-              </button>
+              </a>
               <div className={styles.iconAndTitle}>
                 <div className={styles.iconWrapper}>
                   <module.icon className={styles.moduleIcon} />
@@ -58,14 +54,14 @@ export default function ModuleDetailsPage() {
                 </div>
               </div>
             </div>
-            <Button
-              onClick={() =>
-                window.open('https://forms.gle/oShc79zDeNqAyQ5p8', '_blank')
-              }
+            <a
+              href="https://forms.gle/oShc79zDeNqAyQ5p8"
+              target="_blank"
+              rel="noopener noreferrer"
               className={styles.demoButton}
             >
               Замовити
-            </Button>
+            </a>
           </div>
         </div>
       </div>
@@ -83,15 +79,14 @@ export default function ModuleDetailsPage() {
               </div>
               <h2 className={styles.subtitle}>{module.subtitle}</h2>
               <p className={styles.businessValue}>{module.businessValue}</p>
-              <Button
-                onClick={() =>
-                  window.open('https://forms.gle/oShc79zDeNqAyQ5p8', '_blank')
-                }
-                size="lg"
-                variant="secondary"
+              <a
+                href="https://forms.gle/oShc79zDeNqAyQ5p8"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.tryButton}
               >
                 Спробувати модуль
-              </Button>
+              </a>
             </div>
             <div className={styles.heroImageWrapper}>
               <img
@@ -187,16 +182,15 @@ export default function ModuleDetailsPage() {
             автосервісу.
           </p>
           <div className={styles.ctaButtons}>
-            <Button
-              onClick={() =>
-                window.open('https://forms.gle/oShc79zDeNqAyQ5p8', '_blank')
-              }
-              size="lg"
+            <a
+              href="https://forms.gle/oShc79zDeNqAyQ5p8"
+              target="_blank"
+              rel="noopener noreferrer"
               className={styles.orderButton}
             >
               Замовити
-            </Button>
-            <Link href="/modules">
+            </a>
+            <a href="/modules">
               <Button
                 size="lg"
                 variant="outline"
@@ -204,7 +198,7 @@ export default function ModuleDetailsPage() {
               >
                 Дивитися інші модулі
               </Button>
-            </Link>
+            </a>
           </div>
         </div>
       </div>
