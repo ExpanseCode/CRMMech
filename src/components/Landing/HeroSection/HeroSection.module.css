@@ -239,6 +239,7 @@
   font-size: 1rem;
   line-height: 1.5rem;
   font-family: inherit;
+  text-decoration: none;
   padding: 0.75rem 1.25rem;
   background-image: linear-gradient(to right, #22c55e, #059669);
   border-radius: 0.75rem;
@@ -585,7 +586,7 @@
   line-height: 1.25rem;
 }
 
-.arrowWrapper{
+.arrowWrapper {
   display: none;
 }
 
