@@ -100,7 +100,7 @@ export default function Header() {
             </li>
             <li className={css.item}>
               <div className={css.link} onClick={() => scrollToSection('app')}>
-                Додаток
+                Механік
               </div>
             </li>
             <li className={css.item}>
