@@ -44,7 +44,7 @@ export default function MobAppSection() {
     },
   ];
   return (
-    <section className={css.sectionWrapper}>
+    <section id="app" className={css.sectionWrapper}>
       <div className={css.container}>
         <div className={css.sectionHeader}>
           <div className={css.headerBtn}>
@@ -93,13 +93,13 @@ export default function MobAppSection() {
 
               {/* Mobile Screenshot */}
               <div className={css.featureImageBlock}>
-                  <div className={css.imageContainer}>
-                    <img
-                      src={feature.image}
-                      alt={`${feature.title} - мобільний додаток CRMmech`}
-                      className={css.featureImage}
-                    />
-                  </div>
+                <div className={css.imageContainer}>
+                  <img
+                    src={feature.image}
+                    alt={`${feature.title} - мобільний додаток CRMmech`}
+                    className={css.featureImage}
+                  />
+                </div>
               </div>
             </div>
           ))}

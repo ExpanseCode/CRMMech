@@ -94,6 +94,11 @@ export default function MobileMenu({ scrollToSection }) {
             </ul>
           </li>
           <li className={css.item}>
+            <div className={css.link} onClick={() => scrollToSection('app')}>
+              Додаток
+            </div>
+          </li>
+          <li className={css.item}>
             <div
               className={css.link}
               onClick={() => scrollToSection('pricing')}
