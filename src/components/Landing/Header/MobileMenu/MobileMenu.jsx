@@ -126,7 +126,7 @@ export default function MobileMenu({ scrollToSection }) {
             target="blank"
             className={css.enterLink}
           >
-            Вхід в систему
+            Вхід в CRMMech
           </a>
           <a
             href="https://forms.gle/oShc79zDeNqAyQ5p8"
