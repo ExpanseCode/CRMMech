@@ -98,7 +98,7 @@ export default function Footer() {
 
         <div className={styles.bottomBar}>
           <p className={styles.copyright}>
-            © 2024 CRMmech. Всі права захищені.
+            © 2022-2025 CRMmech. Всі права захищені.
           </p>
         </div>
       </div>
