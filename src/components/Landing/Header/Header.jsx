@@ -99,6 +99,11 @@ export default function Header() {
               </AnimatePresence>
             </li>
             <li className={css.item}>
+              <div className={css.link} onClick={() => scrollToSection('app')}>
+                Механік
+              </div>
+            </li>
+            <li className={css.item}>
               <div
                 className={css.link}
                 onClick={() => scrollToSection('pricing')}
@@ -126,7 +131,7 @@ export default function Header() {
               target="blank"
               className={css.enterLink}
             >
-              Вхід в систему
+              Вхід в CRMMech
             </a>
             <a
               href="https://forms.gle/oShc79zDeNqAyQ5p8"
