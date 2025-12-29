@@ -51,7 +51,7 @@
 .headerText {
   color: var(--text-gray);
   color: #90a1b9;
-  font-size: 1.25rem;
+  font-size: 1rem;
   line-height: 1.75rem;
   /* max-width: 48rem; */
   margin-left: auto;
@@ -59,11 +59,21 @@
   margin-bottom: 30px;
 }
 
+@media screen and (min-width: 767.98px) {
+  .headerText {
+    font-size: 1.25rem;
+  }
+}
+
 .cardsWrapper {
   /* display: grid; */
   /* gap: 1.5rem; */
   /* margin-bottom: 1.5rem; */
   display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 10px;
 }
 
 @media screen and (min-width: 767.98px) {
@@ -92,18 +102,32 @@
   flex-direction: column;
 
   /* justify-content: space-between; */
-  width: 379px;
+  width: 100%;
   /* height: 597px; */
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   padding: 40px 30px;
   border-radius: 16px;
   background-color: #171717;
+  flex-shrink: 0;
 }
 
-.profi{
+@media screen and (min-width: 767.98px) {
+  .cardWrapper {
+    width: 318px;
+    padding: 10px;
+  }
+}
+
+@media screen and (min-width: 1279.98px) {
+  .cardWrapper {
+    width: 374px;
+  }
+}
+
+.profi {
   border-radius: 16px;
-border: 1px solid #171718;
-background: linear-gradient(337deg, #171717 -3.35%, #1C1428 101.03%);
+  border: 1px solid #171718;
+  background: linear-gradient(337deg, #171717 -3.35%, #1c1428 101.03%);
 }
 
 .cardWrapper:hover {
@@ -546,10 +570,10 @@ background: linear-gradient(337deg, #171717 -3.35%, #1C1428 101.03%);
   background-color: var(--card-border);
 }
 
-.arrow {
+/* .arrow {
   width: 1rem;
   height: 1rem;
-}
+} */
 
 .line {
   max-width: 1098px;
@@ -566,10 +590,16 @@ background: linear-gradient(337deg, #171717 -3.35%, #1C1428 101.03%);
 .toggleWithTextWrapper {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 10px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 27px;
+}
+
+@media screen and (min-width: 767.98px) {
+  .toggleWithTextWrapper {
+    gap: 16px;
+  }
 }
 
 .rightText {
@@ -779,7 +809,56 @@ input:checked + .slider:before {
 }
 
 .tariffsWrapper {
-  padding-top: 20px;
+  padding: 10px;
   background-color: #0b0b0b;
   border-radius: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+@media screen and (min-width: 767.98px) {
+  .tariffsWrapper {
+    padding-top: 20px;
+    margin-bottom: 2rem;
+  }
+}
+
+.arrow {
+  display: none;
+}
+
+@media screen and (min-width: 767.98px) {
+  .arrow {
+    width: 16px;
+    height: 16px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: #1ac2f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+}
+
+.arrow:disabled {
+  color: #90a1b9;
+  cursor: auto;
+}
+
+.scrollWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+
+@media only screen and (min-width: 768px) {
+  .scrollWrapper {
+    flex-direction: row;
+    overflow: hidden;
+  }
 }
