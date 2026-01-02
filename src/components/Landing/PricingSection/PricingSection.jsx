@@ -435,27 +435,34 @@ export default function PricingSection() {
                     </div>
                   </div>
                   <div className={`${css.stringWrapper} ${css.secondString}`}>
-                    {tariff?.name === 'Start' && !isYear && (
+                    {tariff?.name === 'Start' && (
                       <div
                         className={`${css.paymentInfoWrapper} ${css.baseline}`}
                       >
                         <p className={css.price}>₴0</p>
-                        <p className={css.paymentInfo}>/ 14 днів, потім</p>
+                        <p className={css.paymentInfo}>/ 14 днів</p>
                       </div>
                     )}
                     <div className={css.paymentInfoWrapper}>
-                      {isYear && (
-                        <p className={css.fullPrice}>₴{tariff?.price}</p>
+                      {isYear && tariff?.name !== 'Start' && (
+                        <p className={css.fullPrice}>
+                          ₴{Number(tariff?.price).toLocaleString('uk-UA')}
+                        </p>
                       )}
-                      <p className={css.price}>
-                        ₴{!isYear ? tariff?.price : Number(tariff?.price) * 0.8}
-                      </p>
-                      {tariff?.name === 'Start' && isYear ? (
+                      {tariff?.name !== 'Start' && (
+                        <p className={css.price}>
+                          ₴
+                          {!isYear
+                            ? Number(tariff?.price).toLocaleString('uk-UA')
+                            : Number(tariff?.price) * 0.8}
+                        </p>
+                      )}
+                      {tariff?.name !== 'Start' && isYear ? (
                         <p className={css.paymentInfo}>/міс за локацію</p>
-                      ) : tariff?.name === 'Start' ? (
-                        <p className={css.paymentInfo}>/міс</p>
+                      ) : tariff?.name !== 'Start' ? (
+                        <p className={css.paymentInfo}>/міс за локацію</p>
                       ) : (
-                        <p className={css.paymentInfo}>/міс за локацію</p>
+                        <p className={css.paymentInfo}></p>
                       )}
                     </div>
                   </div>
