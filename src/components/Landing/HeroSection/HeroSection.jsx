@@ -128,7 +128,7 @@ export default function HeroSection() {
               🎥 Демо
             </button>
             <a
-              href="/src/assets/CRMmech-Презентація.pdf"
+              href="/CRMmech_ua.pdf"
               download={'CRMmech-Презентація.pdf'}
               className={css.downloadBtn}
             >
